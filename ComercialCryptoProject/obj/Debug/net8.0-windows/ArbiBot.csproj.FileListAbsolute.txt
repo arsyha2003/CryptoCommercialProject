@@ -1,0 +1,332 @@
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\obj\Debug\net8.0-windows\ArbiBot.csproj.AssemblyReference.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\obj\Debug\net8.0-windows\ArbiBot.Form1.resources
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\obj\Debug\net8.0-windows\ArbiBot.csproj.GenerateResource.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\obj\Debug\net8.0-windows\ArbiBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\obj\Debug\net8.0-windows\ArbiBot.AssemblyInfoInputs.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\obj\Debug\net8.0-windows\ArbiBot.AssemblyInfo.cs
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\obj\Debug\net8.0-windows\ArbiBot.csproj.CoreCompileInputs.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\ArbiBot.exe
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\ArbiBot.deps.json
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\ArbiBot.runtimeconfig.json
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\ArbiBot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\ArbiBot.pdb
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Binance.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Bybit.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\CoinEx.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Crc32.NET.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\CryptoExchange.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\GateIo.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\BingX.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Bitget.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Mexc.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\OKX.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\HTX.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Kucoin.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Diagnostics.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Http.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\obj\Debug\net8.0-windows\ArbiBot.csproj.Up2Date
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\obj\Debug\net8.0-windows\ArbiBot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\obj\Debug\net8.0-windows\refint\ArbiBot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\obj\Debug\net8.0-windows\ArbiBot.pdb
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\obj\Debug\net8.0-windows\ArbiBot.genruntimeconfig.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\obj\Debug\net8.0-windows\ref\ArbiBot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Telegram.Bot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\obj\Debug\net8.0-windows\ArbiBot.Properties.Resources.resources
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\obj\Debug\net8.0-windows\ArbiBot.OptionsForm.resources
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\ArbiBot.exe
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\ArbiBot.deps.json
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\ArbiBot.runtimeconfig.json
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\ArbiBot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\ArbiBot.pdb
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Binance.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Bybit.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\CoinEx.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Crc32.NET.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\CryptoExchange.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\GateIo.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\BingX.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Bitget.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Mexc.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\OKX.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\HTX.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Kucoin.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Extensions.Diagnostics.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Extensions.Http.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\Telegram.Bot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\obj\Debug\net8.0-windows\ArbiBot.csproj.AssemblyReference.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\obj\Debug\net8.0-windows\ArbiBot.Form1.resources
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\obj\Debug\net8.0-windows\ArbiBot.OptionsForm.resources
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\obj\Debug\net8.0-windows\ArbiBot.Properties.Resources.resources
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\obj\Debug\net8.0-windows\ArbiBot.csproj.GenerateResource.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\obj\Debug\net8.0-windows\ArbiBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\obj\Debug\net8.0-windows\ArbiBot.AssemblyInfoInputs.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\obj\Debug\net8.0-windows\ArbiBot.AssemblyInfo.cs
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\obj\Debug\net8.0-windows\ArbiBot.csproj.CoreCompileInputs.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\obj\Debug\net8.0-windows\ArbiBot.csproj.Up2Date
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\obj\Debug\net8.0-windows\ArbiBot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\obj\Debug\net8.0-windows\refint\ArbiBot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\obj\Debug\net8.0-windows\ArbiBot.pdb
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\obj\Debug\net8.0-windows\ArbiBot.genruntimeconfig.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\ArbiBot — копия\obj\Debug\net8.0-windows\ref\ArbiBot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\ArbiBot.exe
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\ArbiBot.deps.json
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\ArbiBot.runtimeconfig.json
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\ArbiBot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\ArbiBot.pdb
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Binance.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Bybit.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\CoinEx.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Crc32.NET.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\CryptoExchange.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\GateIo.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\BingX.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Bitget.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Mexc.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\OKX.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\HTX.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Kucoin.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Extensions.Diagnostics.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Extensions.Http.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\Telegram.Bot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\obj\Debug\net8.0-windows\ArbiBot.csproj.AssemblyReference.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\obj\Debug\net8.0-windows\ArbiBot.Form1.resources
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\obj\Debug\net8.0-windows\ArbiBot.OptionsForm.resources
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\obj\Debug\net8.0-windows\ArbiBot.Properties.Resources.resources
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\obj\Debug\net8.0-windows\ArbiBot.csproj.GenerateResource.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\obj\Debug\net8.0-windows\ArbiBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\obj\Debug\net8.0-windows\ArbiBot.AssemblyInfoInputs.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\obj\Debug\net8.0-windows\ArbiBot.AssemblyInfo.cs
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\obj\Debug\net8.0-windows\ArbiBot.csproj.CoreCompileInputs.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\obj\Debug\net8.0-windows\ArbiBot.csproj.Up2Date
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\obj\Debug\net8.0-windows\ArbiBot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\obj\Debug\net8.0-windows\refint\ArbiBot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\obj\Debug\net8.0-windows\ArbiBot.pdb
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\obj\Debug\net8.0-windows\ArbiBot.genruntimeconfig.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\arbi and PumpAndDump\obj\Debug\net8.0-windows\ref\ArbiBot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\ArbiBot.exe
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\ArbiBot.deps.json
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\ArbiBot.runtimeconfig.json
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\ArbiBot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\ArbiBot.pdb
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Binance.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Bybit.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\CoinEx.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Crc32.NET.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\CryptoExchange.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\GateIo.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\BingX.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Bitget.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Mexc.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\OKX.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\HTX.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Kucoin.Net.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Diagnostics.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Http.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\Telegram.Bot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\obj\Debug\net8.0-windows\ArbiBot.csproj.AssemblyReference.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\obj\Debug\net8.0-windows\ArbiBot.Form1.resources
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\obj\Debug\net8.0-windows\ArbiBot.OptionsForm.resources
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\obj\Debug\net8.0-windows\ArbiBot.Properties.Resources.resources
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\obj\Debug\net8.0-windows\ArbiBot.csproj.GenerateResource.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\obj\Debug\net8.0-windows\ArbiBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\obj\Debug\net8.0-windows\ArbiBot.AssemblyInfoInputs.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\obj\Debug\net8.0-windows\ArbiBot.AssemblyInfo.cs
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\obj\Debug\net8.0-windows\ArbiBot.csproj.CoreCompileInputs.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\obj\Debug\net8.0-windows\ArbiBot.csproj.Up2Date
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\obj\Debug\net8.0-windows\ArbiBot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\obj\Debug\net8.0-windows\refint\ArbiBot.dll
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\obj\Debug\net8.0-windows\ArbiBot.pdb
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\obj\Debug\net8.0-windows\ArbiBot.genruntimeconfig.cache
+C:\MYFOLDER\Coding\С#\Курсовой проект\NewVersionOfBot\obj\Debug\net8.0-windows\ref\ArbiBot.dll
