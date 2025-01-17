@@ -50,7 +50,7 @@ namespace ArbiBot
                 }
             }
         }
-        private void CompareInfoFromDataBase(TradeContext db)
+        private async void CompareInfoFromDataBase(TradeContext db)
         {
             for (int i = 0; i < db.Signals.Count(); i++)
             {
@@ -69,18 +69,26 @@ namespace ArbiBot
                         return;
                     using(var uDb = new UsersContext())
                     {
-                        var users = uDb.Users.Include(u => u.SubType).ToList();
+                        var users = uDb.Users.Include(u => u.SubType).Select(u => u);
                         foreach (var user in users)
                         {
-                            if (user.SubType.TypeOfSubscribe == "PumpDump"  ||
-                                    user.SubType.TypeOfSubscribe == "Both"  && user.SubscriptionEnd > DateTime.Now)
+                            if ((user.SubTypeId == 2 ||
+                                    user.SubTypeId == 3) && user.SubscriptionEnd>DateTime.Now)
                             {
                                 if (spread >= (decimal)3)
-                                    botClient.SendMessage(user.TelegramId, $"Изменение по паре {$"<a href=\"{link}\">{pares[i]}</a>"} за {compareOfTime.ToString(@"mm\:ss")} {Math.Round(spread, 3)}%🟢\n" +
+                                {
+                                    await botClient.SendMessage(user.TelegramId, $"Изменение по паре {$"<a href=\"{link}\">{pares[i]}</a>"} за " +
+                                        $"{compareOfTime.ToString(@"mm\:ss")} {Math.Round(spread, 3)}%🟢\n" +
                                         $"{oldPrice}$ -> {newPrice}$", ParseMode.Html);
+                                    
+                                }
                                 else if (spread <= (decimal)-3)
-                                    botClient.SendMessage(user.TelegramId, $"Изменение по паре {$"<a href=\"{link}\">{pares[i]}</a>"} за {compareOfTime.ToString(@"mm\:ss")} {Math.Round(spread, 3)}%🔴\n" +
-                                        $"{oldPrice}$ -> {newPrice}$\n",ParseMode.Html);
+                                {
+                                    await botClient.SendMessage(user.TelegramId, $"Изменение по паре {$"<a href=\"{link}\">{pares[i]}</a>"} за " +
+                                        $"{compareOfTime.ToString(@"mm\:ss")} {Math.Round(spread, 3)}%🔴\n" +
+                                        $"{oldPrice}$ -> {newPrice}$\n", ParseMode.Html);
+                                }
+                                
                             }
                         }
                     }
@@ -102,8 +110,7 @@ namespace ArbiBot
         }
         private void ClearTables(TradeContext db)
         {
-            db.Database.EnsureDeleted();
-            db.Database.EnsureCreated();
+            db.Database.ExecuteSqlRaw("TRUNCATE TABLE Signals");
         }
         
     }

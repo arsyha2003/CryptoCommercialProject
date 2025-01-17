@@ -269,7 +269,6 @@ namespace ArbiBot
                             break;
                         case "subInfo":
                             var users = db.Users.Include(u => u.SubType).Where(u => u.TelegramId == uId).Select(u=>u);
-                            await botClient.SendMessage(uId, users.ToList()[0].SubTypeId.ToString());
                             foreach (var user in users)
                                 {
                                 switch (user.SubTypeId)
@@ -324,20 +323,19 @@ namespace ArbiBot
                     switch (payload.ToLower())
                     {
                         case "arbibot":
-                            db.Users.Add(new UserData() { TelegramId = uId, SubscriptionEnd = DateTime.Now.AddMonths(1), SubType = new TypesOfSubscribe() { TypeOfSubscribe = "Arbi" } });
+                            db.Users.Add(new UserData() { TelegramId = uId, SubscriptionEnd = DateTime.Now.AddMonths(1), SubTypeId = 1 });
                             db.SaveChanges();
                             break;
                         case "pump&dump":
-                            db.Users.Add(new UserData() { TelegramId = uId, SubscriptionEnd = DateTime.Now.AddMonths(1), SubType = new TypesOfSubscribe() { TypeOfSubscribe = "PumpDump" } });
+                            db.Users.Add(new UserData() { TelegramId = uId, SubscriptionEnd = DateTime.Now.AddMonths(1), SubTypeId = 2 });
                             db.SaveChanges();
                             break;
                         case "both":
-                            db.Users.Add(new UserData() { TelegramId = uId, SubscriptionEnd = DateTime.Now.AddMonths(1), SubType = new TypesOfSubscribe() { TypeOfSubscribe = "Both" } });
+                            db.Users.Add(new UserData() { TelegramId = uId, SubscriptionEnd = DateTime.Now.AddMonths(1), SubTypeId = 3 });
                             db.SaveChanges();
                             break;
                     }
                 }
-                
                 await botClient.SendMessage(uId,"Оплата прошла успешно! Подписка будет действенна до " + DateTime.Now.AddMonths(1).ToShortDateString());
             }
 

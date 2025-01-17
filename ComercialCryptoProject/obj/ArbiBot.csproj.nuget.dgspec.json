@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MYFOLDER\\Coding\\С#\\Курсовой проект\\NewVersionOfBot\\ArbiBot.csproj": {}
+    "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\ArbiBot.csproj": {}
   },
   "projects": {
-    "C:\\MYFOLDER\\Coding\\С#\\Курсовой проект\\NewVersionOfBot\\ArbiBot.csproj": {
+    "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\ArbiBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MYFOLDER\\Coding\\С#\\Курсовой проект\\NewVersionOfBot\\ArbiBot.csproj",
+        "projectUniqueName": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\ArbiBot.csproj",
         "projectName": "ArbiBot",
-        "projectPath": "C:\\MYFOLDER\\Coding\\С#\\Курсовой проект\\NewVersionOfBot\\ArbiBot.csproj",
+        "projectPath": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\ArbiBot.csproj",
         "packagesPath": "C:\\Users\\arsen\\.nuget\\packages\\",
-        "outputPath": "C:\\MYFOLDER\\Coding\\С#\\Курсовой проект\\NewVersionOfBot\\obj\\",
+        "outputPath": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using System.Runtime.InteropServices;
 using Telegram.Bot;
 using Telegram.Bot.Types.Enums;
@@ -33,6 +34,15 @@ namespace ArbiBot
             showPND = (string spread) => {  label1.Text = spread; };
             registrationBot = new RegistrationBot(showSpread);
             pumpAndDumpBot = new PumpAndDumpBot(showPND);
+        }
+        private void ClearTable(object sender, EventArgs e)
+        {
+            using(var db = new UsersContext())
+            {
+                db.Database.EnsureDeleted();
+                db.Database.EnsureCreated();
+                db.Database.ExecuteSqlRaw("insert into Types (TypeOfSubscribe) values ('Arbi'),('PumpDump'),('Both')");
+            }
         }
         private async void StartPumpAndDump(object sender, EventArgs e)
         {

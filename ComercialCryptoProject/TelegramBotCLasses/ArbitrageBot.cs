@@ -8,6 +8,7 @@ using Telegram.Bot.Types.Enums;
 using Telegram.Bot.Types;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic.ApplicationServices;
+using System.Security.Cryptography;
 
 namespace ArbiBot
 {
@@ -39,7 +40,7 @@ namespace ArbiBot
             cts.Cancel();
             cts = new CancellationTokenSource();
         }
-        public void StartBot()
+        public async void StartBot()
         {
             showSpread.Invoke("Бот запущен");
             pares = arb.GetTradeParesAsync().Result;
@@ -47,7 +48,7 @@ namespace ArbiBot
             using (var db = new UsersContext())
             {
                 while (true)
-                {
+                { 
                     if (cts.IsCancellationRequested)
                     {
                         showSpread.Invoke("Бот остановлен");
@@ -66,13 +67,14 @@ namespace ArbiBot
                             string message = arb.GenerateMessage(pare);
                             if (message != string.Empty)
                             {
-                                var users = db.Users.Include(u => u.SubType).ToList();
+                                var users = db.Users.Include(u => u.SubType).Select(u => u);
                                 foreach (var user in users)
                                 {
-                                    if (user.SubType.TypeOfSubscribe == "Arbitrage"  ||
-                                        user.SubType.TypeOfSubscribe == "Both" && user.SubscriptionEnd > DateTime.Now) 
+                                    if ((user.SubTypeId == 1  ||
+                                        user.SubTypeId == 3) && user.SubscriptionEnd>DateTime.Now) 
                                     {
-                                        botClient.SendMessage(user.TelegramId, message, ParseMode.Html);
+                                        await botClient.SendMessage(user.TelegramId, message, ParseMode.Html);
+                                       
                                     }
                                 }
                             }
