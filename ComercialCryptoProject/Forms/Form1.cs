@@ -27,11 +27,6 @@ namespace ArbiBot
                 spreadRange1 = range1;
                 spreadRange2 = range2;
             };
-            showSpread = (string spread) =>
-            {
-                label6.Text = spread;
-            };
-            showPND = (string spread) => {  label1.Text = spread; };
             registrationBot = new RegistrationBot();
             pumpAndDumpBot = new PumpAndDumpBot();
             arbitrageBot = new ArbitrageBot();
@@ -85,7 +80,7 @@ namespace ArbiBot
             {
                 foreach (var user in db.Users)
                 {
-                    listBox1.Items.Add(user.TelegramId);
+                    listBox1.Items.Add($"id = {user.Id}. tgId = {user.TelegramId} subId = {user.SubTypeId} subEndDate - {user.SubscriptionEnd.ToShortDateString()}");
                 }
             }
         }
