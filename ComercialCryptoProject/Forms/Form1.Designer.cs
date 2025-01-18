@@ -29,40 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            button2 = new Button();
             toolStrip1 = new ToolStrip();
             toolStripButton1 = new ToolStripButton();
-            listBox1 = new ListBox();
-            button3 = new Button();
             label3 = new Label();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button1 = new Button();
+            kryptonButton1 = new Krypton.Toolkit.KryptonButton();
+            kryptonButton2 = new Krypton.Toolkit.KryptonButton();
+            kryptonButton3 = new Krypton.Toolkit.KryptonButton();
+            kryptonButton4 = new Krypton.Toolkit.KryptonButton();
+            kryptonButton5 = new Krypton.Toolkit.KryptonButton();
+            kryptonButton6 = new Krypton.Toolkit.KryptonButton();
+            kryptonListBox1 = new Krypton.Toolkit.KryptonListBox();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(255, 192, 192);
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Bahnschrift", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            button2.ForeColor = SystemColors.ControlText;
-            button2.Location = new Point(510, 193);
-            button2.Name = "button2";
-            button2.Size = new Size(164, 61);
-            button2.TabIndex = 5;
-            button2.Text = "Перезапуск арбитражника";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += StartArbitrageEvent;
-            // 
             // toolStrip1
             // 
+            toolStrip1.Font = new Font("Segoe UI", 9F);
             toolStrip1.ImageScalingSize = new Size(20, 20);
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(853, 27);
+            toolStrip1.Size = new Size(910, 27);
             toolStrip1.TabIndex = 6;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -76,31 +63,6 @@
             toolStripButton1.Text = "OptionsButton";
             toolStripButton1.Click += OpenOptionsEvent;
             // 
-            // listBox1
-            // 
-            listBox1.BackColor = Color.FromArgb(255, 192, 192);
-            listBox1.Font = new Font("Bahnschrift", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 22;
-            listBox1.Location = new Point(0, 30);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(493, 422);
-            listBox1.TabIndex = 11;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(255, 192, 192);
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Font = new Font("Bahnschrift", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            button3.ForeColor = SystemColors.ControlText;
-            button3.Location = new Point(510, 30);
-            button3.Name = "button3";
-            button3.Size = new Size(343, 37);
-            button3.TabIndex = 12;
-            button3.Text = "Показать пользователей";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += SelectAllRegisteredUsersEvent;
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -111,76 +73,108 @@
             label3.Size = new Size(0, 24);
             label3.TabIndex = 13;
             // 
-            // button4
+            // kryptonButton1
             // 
-            button4.BackColor = Color.FromArgb(255, 192, 192);
-            button4.FlatStyle = FlatStyle.Popup;
-            button4.Font = new Font("Bahnschrift", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            button4.ForeColor = SystemColors.ControlText;
-            button4.Location = new Point(680, 193);
-            button4.Name = "button4";
-            button4.Size = new Size(173, 61);
-            button4.TabIndex = 14;
-            button4.Text = "Перезапуск скринера";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += StartPumpAndDump;
+            kryptonButton1.AccessibleRole = AccessibleRole.Chart;
+            kryptonButton1.Location = new Point(499, 361);
+            kryptonButton1.Name = "kryptonButton1";
+            kryptonButton1.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
+            kryptonButton1.RightToLeft = RightToLeft.Yes;
+            kryptonButton1.Size = new Size(199, 82);
+            kryptonButton1.TabIndex = 19;
+            kryptonButton1.Values.DropDownArrowColor = Color.Empty;
+            kryptonButton1.Values.Text = "Перезапуск Абитражника";
+            kryptonButton1.Click += StartArbitrageEvent;
             // 
-            // button5
+            // kryptonButton2
             // 
-            button5.BackColor = Color.FromArgb(255, 192, 192);
-            button5.FlatStyle = FlatStyle.Popup;
-            button5.Font = new Font("Bahnschrift", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            button5.ForeColor = SystemColors.ControlText;
-            button5.Location = new Point(510, 126);
-            button5.Name = "button5";
-            button5.Size = new Size(164, 61);
-            button5.TabIndex = 15;
-            button5.Text = "Остановка арбитражника";
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += StopArbitrageEvent;
+            kryptonButton2.AccessibleRole = AccessibleRole.Chart;
+            kryptonButton2.Location = new Point(704, 361);
+            kryptonButton2.Name = "kryptonButton2";
+            kryptonButton2.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
+            kryptonButton2.RightToLeft = RightToLeft.Yes;
+            kryptonButton2.Size = new Size(199, 82);
+            kryptonButton2.TabIndex = 20;
+            kryptonButton2.Values.DropDownArrowColor = Color.Empty;
+            kryptonButton2.Values.Text = "Перезапуск Скринера";
+            kryptonButton2.Click += StartPumpAndDump;
             // 
-            // button6
+            // kryptonButton3
             // 
-            button6.BackColor = Color.FromArgb(255, 192, 192);
-            button6.FlatStyle = FlatStyle.Popup;
-            button6.Font = new Font("Bahnschrift", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            button6.ForeColor = SystemColors.ControlText;
-            button6.Location = new Point(680, 126);
-            button6.Name = "button6";
-            button6.Size = new Size(173, 61);
-            button6.TabIndex = 16;
-            button6.Text = "Остановка скринера";
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += StopPumpAndDumpBot;
+            kryptonButton3.AccessibleRole = AccessibleRole.Chart;
+            kryptonButton3.Location = new Point(499, 274);
+            kryptonButton3.Name = "kryptonButton3";
+            kryptonButton3.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
+            kryptonButton3.RightToLeft = RightToLeft.Yes;
+            kryptonButton3.Size = new Size(199, 82);
+            kryptonButton3.TabIndex = 21;
+            kryptonButton3.Values.DropDownArrowColor = Color.Empty;
+            kryptonButton3.Values.Text = "Остановка Арбитражника";
+            kryptonButton3.Click += StopArbitrageEvent;
             // 
-            // button1
+            // kryptonButton4
             // 
-            button1.BackColor = Color.FromArgb(255, 192, 192);
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Bahnschrift", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            button1.ForeColor = SystemColors.ControlText;
-            button1.Location = new Point(510, 73);
-            button1.Name = "button1";
-            button1.Size = new Size(345, 37);
-            button1.TabIndex = 18;
-            button1.Text = "Очистить пользователей";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += ClearTable;
+            kryptonButton4.AccessibleRole = AccessibleRole.Chart;
+            kryptonButton4.Location = new Point(704, 274);
+            kryptonButton4.Name = "kryptonButton4";
+            kryptonButton4.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
+            kryptonButton4.RightToLeft = RightToLeft.Yes;
+            kryptonButton4.Size = new Size(199, 82);
+            kryptonButton4.TabIndex = 22;
+            kryptonButton4.Values.DropDownArrowColor = Color.Empty;
+            kryptonButton4.Values.Text = "Остановка Скринера";
+            kryptonButton4.Click += StopPumpAndDumpBot;
+            // 
+            // kryptonButton5
+            // 
+            kryptonButton5.AccessibleRole = AccessibleRole.Chart;
+            kryptonButton5.Location = new Point(499, 101);
+            kryptonButton5.Name = "kryptonButton5";
+            kryptonButton5.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleOrangeDarkMode;
+            kryptonButton5.RightToLeft = RightToLeft.Yes;
+            kryptonButton5.Size = new Size(404, 65);
+            kryptonButton5.TabIndex = 23;
+            kryptonButton5.Values.DropDownArrowColor = Color.Empty;
+            kryptonButton5.Values.Text = "Очистить список пользователей";
+            kryptonButton5.Click += ClearTable;
+            // 
+            // kryptonButton6
+            // 
+            kryptonButton6.AccessibleRole = AccessibleRole.Chart;
+            kryptonButton6.Location = new Point(499, 30);
+            kryptonButton6.Name = "kryptonButton6";
+            kryptonButton6.PaletteMode = Krypton.Toolkit.PaletteMode.SparkleOrangeDarkMode;
+            kryptonButton6.RightToLeft = RightToLeft.Yes;
+            kryptonButton6.Size = new Size(404, 65);
+            kryptonButton6.TabIndex = 24;
+            kryptonButton6.Values.DropDownArrowColor = Color.Empty;
+            kryptonButton6.Values.Text = "Показать пользователей";
+            kryptonButton6.Click += SelectAllRegisteredUsersEvent;
+            // 
+            // kryptonListBox1
+            // 
+            kryptonListBox1.BackStyle = Krypton.Toolkit.PaletteBackStyle.ContextMenuItemImage;
+            kryptonListBox1.BorderStyle = Krypton.Toolkit.PaletteBorderStyle.ButtonCalendarDay;
+            kryptonListBox1.Location = new Point(12, 30);
+            kryptonListBox1.Name = "kryptonListBox1";
+            kryptonListBox1.Size = new Size(434, 435);
+            kryptonListBox1.TabIndex = 25;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(853, 450);
-            Controls.Add(button1);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
+            BackColor = Color.Indigo;
+            ClientSize = new Size(910, 450);
+            Controls.Add(kryptonListBox1);
+            Controls.Add(kryptonButton6);
+            Controls.Add(kryptonButton5);
+            Controls.Add(kryptonButton4);
+            Controls.Add(kryptonButton3);
+            Controls.Add(kryptonButton2);
+            Controls.Add(kryptonButton1);
             Controls.Add(label3);
-            Controls.Add(button3);
-            Controls.Add(listBox1);
             Controls.Add(toolStrip1);
-            Controls.Add(button2);
             Name = "Form1";
             Text = "Form1";
             Load += OnFormLoadEvent;
@@ -191,15 +185,15 @@
         }
 
         #endregion
-        private Button button2;
         private ToolStrip toolStrip1;
         private ToolStripButton toolStripButton1;
-        private ListBox listBox1;
-        private Button button3;
         private Label label3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button1;
+        private Krypton.Toolkit.KryptonButton kryptonButton1;
+        private Krypton.Toolkit.KryptonButton kryptonButton2;
+        private Krypton.Toolkit.KryptonButton kryptonButton3;
+        private Krypton.Toolkit.KryptonButton kryptonButton4;
+        private Krypton.Toolkit.KryptonButton kryptonButton5;
+        private Krypton.Toolkit.KryptonButton kryptonButton6;
+        private Krypton.Toolkit.KryptonListBox kryptonListBox1;
     }
 }

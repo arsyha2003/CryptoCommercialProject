@@ -168,6 +168,14 @@
           }
         }
       },
+      "Krypton.Toolkit/90.24.11.317": {
+        "runtime": {
+          "lib/net8.0-windows7.0/Krypton.Toolkit.dll": {
+            "assemblyVersion": "90.24.11.317",
+            "fileVersion": "90.24.11.317"
+          }
+        }
+      },
       "Kucoin.Net/5.23.1": {
         "dependencies": {
           "CryptoExchange.Net": "8.5.0"
@@ -1013,6 +1021,13 @@
       "sha512": "sha512-mfSbhn0Y202MuvmellErF+lSR+q+heWTAjyeFPHnW9IwejS21A2Dk0zAM4ZqcdBKUTDZE3H5dMLmc3SZMbVI5g==",
       "path": "jkorf.htx.net/6.8.0",
       "hashPath": "jkorf.htx.net.6.8.0.nupkg.sha512"
+    },
+    "Krypton.Toolkit/90.24.11.317": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZDWh7loQiowFJeY9tcLDtyOSRsGpEgg866FwE3Z7h6wY5qacFNQJN81tw7FHUBSSiz0l0bY4k9cBNjJlz9ozMg==",
+      "path": "krypton.toolkit/90.24.11.317",
+      "hashPath": "krypton.toolkit.90.24.11.317.nupkg.sha512"
     },
     "Kucoin.Net/5.23.1": {
       "type": "package",

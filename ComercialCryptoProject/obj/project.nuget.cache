@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8hbePgy103U=",
+  "dgSpecHash": "OCbkHFw/BT4=",
   "success": true,
   "projectFilePath": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\ArbiBot.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\arsen\\.nuget\\packages\\jk.mexc.net\\1.15.0\\jk.mexc.net.1.15.0.nupkg.sha512",
     "C:\\Users\\arsen\\.nuget\\packages\\jk.okx.net\\2.14.0\\jk.okx.net.2.14.0.nupkg.sha512",
     "C:\\Users\\arsen\\.nuget\\packages\\jkorf.htx.net\\6.8.0\\jkorf.htx.net.6.8.0.nupkg.sha512",
+    "C:\\Users\\arsen\\.nuget\\packages\\krypton.toolkit\\90.24.11.317\\krypton.toolkit.90.24.11.317.nupkg.sha512",
     "C:\\Users\\arsen\\.nuget\\packages\\kucoin.net\\5.23.1\\kucoin.net.5.23.1.nupkg.sha512",
     "C:\\Users\\arsen\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\arsen\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
