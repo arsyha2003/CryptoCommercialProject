@@ -32,8 +32,8 @@ namespace ArbiBot
                 label6.Text = spread;
             };
             showPND = (string spread) => {  label1.Text = spread; };
-            registrationBot = new RegistrationBot(showSpread);
-            pumpAndDumpBot = new PumpAndDumpBot(showPND);
+            registrationBot = new RegistrationBot();
+            pumpAndDumpBot = new PumpAndDumpBot();
         }
         private void ClearTable(object sender, EventArgs e)
         {
@@ -57,7 +57,7 @@ namespace ArbiBot
         }
         private async void StartArbitrageEvent(object sender, EventArgs e)
         {
-            if(spreadRange2!=0) arbitrageBot = new ArbitrageBot(spreadRange1, spreadRange2, showSpread);
+            if(spreadRange2!=0) arbitrageBot = new ArbitrageBot(spreadRange1, spreadRange2);
             await Task.Run(()=>arbitrageBot.StartBot());
         }
         private void StopArbitrageEvent(object sender, EventArgs e)

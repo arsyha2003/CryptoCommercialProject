@@ -7,26 +7,27 @@
       "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:telegrambotclasses\\arbitragebot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\telegrambotclasses\\registrationbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:telegrambotclasses\\registrationbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\telegrambotclasses\\pumpanddumpbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:telegrambotclasses\\pumpanddumpbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Users/True/SqlTable/dbo.Types.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\telegrambotclasses\\registrationbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:telegrambotclasses\\registrationbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\pump\u0026dumpclasses\\bybitpumpanddump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:pump\u0026dumpclasses\\bybitpumpanddump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\arbitrageclasses\\arbitrage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:arbitrageclasses\\arbitrage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -46,15 +47,8 @@
       "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:efclasses\\entities\\exchangeinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\pump\u0026dumpclasses\\bybitpumpanddump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:pump\u0026dumpclasses\\bybitpumpanddump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\efclasses\\tradecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:efclasses\\tradecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MYFOLDER\\Coding\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\OKXEchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MYFOLDER\\Coding\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\MexcExchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -91,43 +85,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 525,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Forms\\Form1.cs",
               "RelativeDocumentMoniker": "Forms\\Form1.cs",
               "ToolTip": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Forms\\Form1.cs",
               "RelativeToolTip": "Forms\\Form1.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAwCsAAABpAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwDAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-07T08:39:15.674Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "OKXEchange.cs",
-              "DocumentMoniker": "C:\\MYFOLDER\\Coding\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\OKXEchange.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\OKXEchange.cs",
-              "ToolTip": "C:\\MYFOLDER\\Coding\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\OKXEchange.cs",
-              "RelativeToolTip": "..\\..\\..\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\OKXEchange.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T10:57:52.851Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dbo.Types [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Users/True/SqlTable/dbo.Types.sql",
-              "ToolTip": "dbo.Types [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-01-17T10:19:30.867Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
@@ -138,12 +114,7 @@
               "ToolTip": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Forms\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "Forms\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T08:56:49.634Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "WhenOpened": "2025-01-17T08:56:49.634Z"
             },
             {
               "$type": "Document",
@@ -155,8 +126,7 @@
               "RelativeToolTip": "EFClasses\\Entities\\TypesOfSubscribe.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T12:55:25.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T12:55:25.892Z"
             },
             {
               "$type": "Document",
@@ -172,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "BybitPumpAndDump.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Pump\u0026DumpClasses\\BybitPumpAndDump.cs",
               "RelativeDocumentMoniker": "Pump\u0026DumpClasses\\BybitPumpAndDump.cs",
@@ -180,11 +150,12 @@
               "RelativeToolTip": "Pump\u0026DumpClasses\\BybitPumpAndDump.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAtwDAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T07:04:25.7Z"
+              "WhenOpened": "2025-01-13T07:04:25.7Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "TradeContext.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\EFClasses\\TradeContext.cs",
               "RelativeDocumentMoniker": "EFClasses\\TradeContext.cs",
@@ -196,26 +167,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RegistrationBot.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\TelegramBotCLasses\\RegistrationBot.cs",
               "RelativeDocumentMoniker": "TelegramBotCLasses\\RegistrationBot.cs",
               "ToolTip": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\TelegramBotCLasses\\RegistrationBot.cs",
               "RelativeToolTip": "TelegramBotCLasses\\RegistrationBot.cs",
-              "ViewState": "AgIAAC0BAAAAAAAAAAAAAFEBAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAAACkBAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T07:00:09.769Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PumpAndDumpBot.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\TelegramBotCLasses\\PumpAndDumpBot.cs",
               "RelativeDocumentMoniker": "TelegramBotCLasses\\PumpAndDumpBot.cs",
-              "ToolTip": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\TelegramBotCLasses\\PumpAndDumpBot.cs*",
-              "RelativeToolTip": "TelegramBotCLasses\\PumpAndDumpBot.cs*",
-              "ViewState": "AgIAADMAAAAAAAAAAAAuwFoAAAAgAAAAAAAAAA==",
+              "ToolTip": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\TelegramBotCLasses\\PumpAndDumpBot.cs",
+              "RelativeToolTip": "TelegramBotCLasses\\PumpAndDumpBot.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwCkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-12T04:55:46.757Z",
               "EditorCaption": ""
@@ -230,8 +201,7 @@
               "RelativeToolTip": "ArbitrageClasses\\Arbitrage.cs",
               "ViewState": "AgIAAB0BAAAAAAAAAAAAADgBAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T04:48:36.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T04:48:36.159Z"
             },
             {
               "$type": "Document",
@@ -241,14 +211,14 @@
               "RelativeDocumentMoniker": "TelegramBotCLasses\\ArbitrageBot.cs",
               "ToolTip": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\TelegramBotCLasses\\ArbitrageBot.cs*",
               "RelativeToolTip": "TelegramBotCLasses\\ArbitrageBot.cs*",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAFAAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAAD4AAACMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-12T04:40:38.692Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "State.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\State.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\State.cs",
@@ -260,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "MexcExchange.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\MexcExchange.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\MexcExchange.cs",
@@ -271,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "KucoinExchange.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\KucoinExchange.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\KucoinExchange.cs",
@@ -283,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "GateIoExchange.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\GateIoExchange.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\GateIoExchange.cs",
@@ -295,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "CoinexExchange.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\CoinexExchange.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\CoinexExchange.cs",
@@ -307,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "BinanceExchange.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\BinanceExchange.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\BinanceExchange.cs",
@@ -319,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "BitgetExchange.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\BitgetExchange.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\BitgetExchange.cs",
@@ -330,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "BybitExchange.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\BybitExchange.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\ArbiBot\\Exhanges\\BybitExchange.cs",
@@ -341,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\arbi and PumpAndDump\\Form1.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\\u0421#\\\u041A\u0443\u0440\u0441\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\arbi and PumpAndDump\\Form1.cs",

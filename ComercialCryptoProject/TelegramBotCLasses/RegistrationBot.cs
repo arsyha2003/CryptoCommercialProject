@@ -28,20 +28,10 @@ namespace ArbiBot
         private ITelegramBotClient botClient;
         const string telegramApiToken = "7248550747:AAEVpNpTA7doTh3S8xSCjNRh_c0HK1q2sEQ";
         private InlineKeyboardMarkup inlineKeyboard;
-        private Action<string> show;
-        public RegistrationBot(Action<string> show)
+        public RegistrationBot()
         {
             using (var db = new UsersContext()) { db.Database.EnsureCreated(); }
-            this.show = show;
             botClient = new TelegramBotClient(telegramApiToken);
-            inlineKeyboard = new InlineKeyboardMarkup(new[]
-            {
-                new[]
-                {
-                    InlineKeyboardButton.WithCallbackData("Показать статус подписки", "subscribtionInfo"),
-                    InlineKeyboardButton.WithCallbackData("Купить подписку", "buySub")
-                }
-            });
             botClient.StartReceiving(
                 HandleUpdateAsync,
                 HandleErrorAsync,
@@ -54,14 +44,11 @@ namespace ArbiBot
         {
             var inlineKeyboard = new InlineKeyboardMarkup(new[]
             {
-                new []
-                {
-                    InlineKeyboardButton.WithCallbackData("Купить подписку на Pump&Dump Screener", "p&d"),
-                }
+                new []{InlineKeyboardButton.WithCallbackData("Купить подписку на Pump&Dump Screener", "p&d"),}
             });
             await botClient.SendMessage(
                chatId: chatId,
-               text: "У вас уже куплена подписка на арбитражника.",
+               text: "У вас уже куплена подписка на арбитражника. Рассмотрите другие подписки",
                replyMarkup: inlineKeyboard
            );
         }
@@ -69,14 +56,11 @@ namespace ArbiBot
         {
             var inlineKeyboard = new InlineKeyboardMarkup(new[]
             {
-                new []
-                {
-                     InlineKeyboardButton.WithCallbackData("Купить подписку на Арбитражника", "arb"),
-                }
+                new []{InlineKeyboardButton.WithCallbackData("Купить подписку на Арбитражника", "arb"),}
             });
             await botClient.SendMessage(
                chatId: chatId,
-               text: "У вас уже куплена подписка на Pump&Dump скринер.",
+               text: "У вас уже куплена подписка на Pump&Dump скринер. Рассмотрите другие подписки.",
                replyMarkup: inlineKeyboard
            );
         }
@@ -84,18 +68,9 @@ namespace ArbiBot
         {
             var inlineKeyboard = new InlineKeyboardMarkup(new[]
             {
-                new []
-                {
-                     InlineKeyboardButton.WithCallbackData("Информация о арбитражнике", "arbInfo"),
-                },
-                new []
-                {
-                     InlineKeyboardButton.WithCallbackData("Информация о Pump&Dump боте", "p&dInfo"),
-                },
-                new []
-                {
-                     InlineKeyboardButton.WithCallbackData("Общая информация", "mainInfo"),
-                }
+                new []{InlineKeyboardButton.WithCallbackData("Информация о арбитражнике", "arbInfo"),},
+                new []{InlineKeyboardButton.WithCallbackData("Информация о Pump&Dump боте", "p&dInfo"),},
+                new []{InlineKeyboardButton.WithCallbackData("Общая информация", "mainInfo"),}
             });
             await botClient.SendMessage(
                chatId: chatId,
@@ -107,29 +82,11 @@ namespace ArbiBot
         {
             var inlineKeyboard = new InlineKeyboardMarkup(new[]
             {
-                new []
-                {
-                    InlineKeyboardButton.WithCallbackData("Купить подписку на Арбитражника", "arb"),
-                    
-                },
-                new []
-                {
-                    InlineKeyboardButton.WithCallbackData("Купить подписку на Pump&Dump Screener", "p&d"),
-
-                },
-                new[]
-                {
-                    InlineKeyboardButton.WithCallbackData("Купить подписку на два продукта", "both"),
-                },
-                new[]
-                {
-                    InlineKeyboardButton.WithCallbackData("Посмотреть информацию по подписке", "subInfo"),
-
-                },
-                new[]
-                {
-                     InlineKeyboardButton.WithCallbackData("Информация о проекте", "help"),
-                }
+                new []{InlineKeyboardButton.WithCallbackData("Купить подписку на Арбитражника", "arb"),},
+                new []{InlineKeyboardButton.WithCallbackData("Купить подписку на Pump&Dump Screener", "p&d"),},
+                new []{InlineKeyboardButton.WithCallbackData("Купить подписку на два продукта", "both"),},
+                new []{InlineKeyboardButton.WithCallbackData("Посмотреть информацию по подписке", "subInfo"),},
+                new []{InlineKeyboardButton.WithCallbackData("Информация о проекте", "help"),}
             });
 
             await botClient.SendMessage(
@@ -206,42 +163,41 @@ namespace ArbiBot
                 int arbitrageCount;
                 int pumpAndDumpCount;
                 using (var db = new UsersContext())
-                { 
+                {
+                    arbitrageCount = db.Users.Include(u => u.SubType).Where(u => u.TelegramId == uId && u.SubTypeId == 1).Count();
+                    pumpAndDumpCount = db.Users.Include(u => u.SubType).Where(u => u.TelegramId == uId && u.SubTypeId == 2).Count();
+                    bothCount = db.Users.Include(u => u.SubType).Where(u => u.TelegramId == uId && u.SubTypeId == 3).Count();
                     switch (callbackQuery.Data)
                     {
+                        case "both":
+                            if (bothCount == 1 || (bothCount == 0 && arbitrageCount != 0 && pumpAndDumpCount != 0))
+                                await botClient.SendMessage(uId, "У вас уже куплена подписка на оба продукта");
+                            else if (bothCount == 0 && arbitrageCount == 0 && pumpAndDumpCount == 0)
+                                await SendInvoiceAsync(botClient, uId, "both");
+                            else if (bothCount == 0 && arbitrageCount == 0 && pumpAndDumpCount == 1)
+                                await SendArbitrageKeyboardAsync(botClient, uId);
+                            else if (bothCount == 0 && arbitrageCount == 1 && pumpAndDumpCount == 0)
+                                await SendPumpAndDumpKeyboardAsync(botClient, uId);
+                            break;
                         case "arb":
                             arbitrageCount = db.Users.Include(u => u.SubType).Where(u => u.TelegramId == uId && u.SubTypeId == 1).Count();
-                            if (arbitrageCount == 0)
+                            if (arbitrageCount == 0 && bothCount == 0)
                                 await SendInvoiceAsync(botClient, uId, "arb");
                             else
                                 await botClient.SendMessage(uId, "У вас уже куплена подписка на Арбитражника");
                             break; 
                         case "p&d":
                              pumpAndDumpCount = db.Users.Include(u => u.SubType).Where(u => u.TelegramId == uId && u.SubTypeId == 2).Count();
-                            if (pumpAndDumpCount == 0)
+                            if (pumpAndDumpCount == 0 && bothCount == 0)
                                 await SendInvoiceAsync(botClient, uId, "p&d");
                             else
                                 await botClient.SendMessage(uId, "У вас уже куплена подписка на Pump&Dump скринер");
                             break; 
-                        case "both":
-                            arbitrageCount = db.Users.Include(u => u.SubType).Where(u => u.TelegramId == uId && u.SubTypeId == 1).Count();
-                            pumpAndDumpCount = db.Users.Include(u => u.SubType).Where(u => u.TelegramId == uId && u.SubTypeId == 2).Count();
-                            bothCount = db.Users.Include(u => u.SubType).Where(u => u.TelegramId == uId && u.SubTypeId == 3).Count();
-
-                            if (bothCount == 0 && arbitrageCount == 0 && pumpAndDumpCount == 0)
-                                await SendInvoiceAsync(botClient, uId, "both");
-                            else if (bothCount == 0 && arbitrageCount == 0 && pumpAndDumpCount != 0)
-                                await SendArbitrageKeyboardAsync(botClient, uId);
-                            else if (bothCount == 0 && arbitrageCount != 0 && pumpAndDumpCount == 0)
-                                await SendPumpAndDumpKeyboardAsync(botClient, uId);
-                            else if (bothCount != 0 || (bothCount == 0 && arbitrageCount != 0 && pumpAndDumpCount != 0))
-                                await botClient.SendMessage(uId, "У вас уже куплена подписка на оба продукта");
-                            break;
                         case "help":
                             await SendInformationButtons(botClient, uId);
                             break;
                         case "arbInfo":
-                            await botClient.SendMessage(uId, "Бот арбитражник, является сигнальным ботом для работе в межбиржевом арбитраже.\n" +
+                            await botClient.SendMessage(uId, "Бот арбитражник является сигнальным ботом для работе в межбиржевом арбитраже криптовалют.\n" +
                                 "Бот ищет связки среды 9 ведущих <b>CEX</b> бирж.\n\n" +
                                 "Список бирж:\n" +
                                 "1)<b>Binance</b>🔥\n" +
@@ -261,16 +217,15 @@ namespace ArbiBot
                                 "Ссылка на бота - @PandDScreenerbot", ParseMode.Html);
                             break;
                         case "mainInfo":
-                            await botClient.SendMessage(uId, $"Наш проект является ботом для межбиржевого арбитража.\n" +
-                                "При покупке нашей подписки, вы получите доступ к боту, а именно к арбитражным связкам которые он находит среди 9 ведущих криптовалютных бирж.\n\n" +
-                                "Список бирж в обороте нашего бота:\n" +
-                                "Обратная связь:\n" +
-                                "@senyacm - владелец проекта", ParseMode.Html);
+                            await botClient.SendMessage(uId, $"Мой проект является набором инструментов для заработка в мире криптовалют." +
+                                $" В данный момент есть только два продукта, но в будущем планируется добавление новых инструментов для торговли, " +
+                                $"а также расширение функционала уже существующих инструментов.\n\n" +
+                                $"Создатель, владелец и разработчик - @senyacm", ParseMode.Html);
                             break;
                         case "subInfo":
-                            var users = db.Users.Include(u => u.SubType).Where(u => u.TelegramId == uId).Select(u=>u);
+                            var users = db.Users.Where(p=>p.TelegramId == uId);
                             foreach (var user in users)
-                                {
+                            {
                                 switch (user.SubTypeId)
                                 {
                                     case 1:
@@ -295,7 +250,9 @@ namespace ArbiBot
                                         $"Арбитражник - @arbi_crypto_mega_bot", ParseMode.Html);
                                         break;
                                     default:
-                                        await botClient.SendMessage(uId, $"У вас не оплачена ни одна подписка");
+                                        await botClient.SendMessage(uId, $"Вас нет в базе данных бота, купите одну из наших подписок");
+                                        await SendArbitrageKeyboardAsync(botClient, uId);
+                                        await SendPumpAndDumpKeyboardAsync(botClient, uId);
                                         break;
                                 }
                             }
@@ -304,7 +261,6 @@ namespace ArbiBot
                             break;
                     }
                 }
-                
             }
             if (update.Type == UpdateType.PreCheckoutQuery)
             {
@@ -317,7 +273,6 @@ namespace ArbiBot
                 var payment = update.Message.SuccessfulPayment;
                 string payload = payment.InvoicePayload;
                 long uId = update.Message.From.Id;
-                show.Invoke($"{payload} {uId}");
                 using (var db = new UsersContext())
                 {
                     switch (payload.ToLower())
@@ -338,13 +293,9 @@ namespace ArbiBot
                 }
                 await botClient.SendMessage(uId,"Оплата прошла успешно! Подписка будет действенна до " + DateTime.Now.AddMonths(1).ToShortDateString());
             }
-
         }
         private Task HandleErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
         {
-            Console.WriteLine($"Ошибка: {exception.StackTrace}");
-            Console.WriteLine($"{exception.Message}");
-            Console.WriteLine($"{exception.InnerException}");
             return Task.CompletedTask;
         }
     }

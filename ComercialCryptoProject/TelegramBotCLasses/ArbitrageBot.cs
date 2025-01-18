@@ -9,6 +9,7 @@ using Telegram.Bot.Types;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic.ApplicationServices;
 using System.Security.Cryptography;
+using Telegram.Bot.Polling;
 
 namespace ArbiBot
 {
@@ -16,54 +17,99 @@ namespace ArbiBot
     {
         private GoArbitrage arb;
         private ITelegramBotClient botClient;
+        private CancellationTokenSource cts;
+        private CancellationToken token;
         public decimal range1 = 1;
         public decimal range2 = 5;
         private string[] pares;
-        private CancellationTokenSource cts;
-        private Action<string> showSpread;
-        public ArbitrageBot(Action<string> showSpread)
+        public ArbitrageBot()
         {
             arb = new GoArbitrage();
-            this.showSpread = showSpread;
             botClient = new TelegramBotClient("8050208272:AAFAeYmM5Jfq61d7BbzEtV_3XFdo7_q71T4");
+            botClient.StartReceiving(
+            HandleUpdateAsync,
+            HandleErrorAsync,
+            new ReceiverOptions
+            {
+                AllowedUpdates = { }
+            });
             cts = new CancellationTokenSource();
         }
-        public ArbitrageBot(decimal range1, decimal range2, Action<string> showSpread)
+        public ArbitrageBot(decimal range1, decimal range2)
         {
-            this.showSpread = showSpread;
             arb = new GoArbitrage(range1, range2);
             botClient = new TelegramBotClient("8050208272:AAFAeYmM5Jfq61d7BbzEtV_3XFdo7_q71T4");
+            botClient.StartReceiving(
+            HandleUpdateAsync,
+            HandleErrorAsync,
+            new ReceiverOptions
+            {
+                AllowedUpdates = { }
+            });
             cts = new CancellationTokenSource();
+        }
+        private async Task HandleUpdateAsync(ITelegramBotClient client, Update update, CancellationToken token)
+        {
+            if (update == null) return;
+            else if (update.Type == UpdateType.Message)
+            {
+                long uId;
+                var message = update.Message;
+                uId = message.From.Id;
+                using (var db = new UsersContext())
+                {
+                    if (message.Text == "/start")
+                    {
+                        var users = db.Users.Include(u => u.SubType).Where(u => u.TelegramId == uId && (u.SubTypeId == 1 || u.SubTypeId == 3)).Select(u => u).ToList();
+                        if (users.Count > 0)
+                        {
+                            var user = users.First();
+                            if (user.SubscriptionEnd > DateTime.Now)
+                            {
+                                await botClient.SendMessage(user.TelegramId, $"Ваша подписка актуальна до {user.SubscriptionEnd.ToShortDateString()}\n" +
+                                $"Для подробной информации о арбитражнике и других продуктах - @arbi_reg_bot");
+                            }
+                            else
+                            {
+                                await botClient.SendMessage(user.TelegramId,$"Ваша подписка закончилась {user.SubscriptionEnd}\n" +
+                                    $"для продления подписки перейдите в бота - @arbi_reg_bot");
+                            }
+                        }
+                        else
+                        {
+                            await botClient.SendMessage(uId, $"У вас нет подписки на бота арбитражника\n" +
+                                $"Для покупки подписки на арбитражника и другие продукты перейдите в бота - @arbi_reg_bot");
+                        }
+                    }
+                }
+                      
+            };
+        }
+        private Task HandleErrorAsync(ITelegramBotClient client, Exception exception, HandleErrorSource source, CancellationToken token)
+        {
+            return Task.CompletedTask;
         }
         public void StopBot()
         {
             cts.Cancel();
-            cts = new CancellationTokenSource();
         }
         public async void StartBot()
         {
-            showSpread.Invoke("Бот запущен");
+            cts = new CancellationTokenSource();
+            token = cts.Token;
             pares = arb.GetTradeParesAsync().Result;
-            showSpread.Invoke("Пары получеын");
             using (var db = new UsersContext())
             {
                 while (true)
                 { 
-                    if (cts.IsCancellationRequested)
-                    {
-                        showSpread.Invoke("Бот остановлен");
-                        return;
-                    }
+                    if (token.IsCancellationRequested)
+                        return;   
                     foreach (var pare in pares)
                     {
                         try
                         {
-                            showSpread.Invoke(pare);
-                            if (cts.IsCancellationRequested)
-                            {
-                                showSpread.Invoke("Бот остановлен");
+                            if (token.IsCancellationRequested)
                                 return;
-                            }
                             string message = arb.GenerateMessage(pare);
                             if (message != string.Empty)
                             {
@@ -74,7 +120,6 @@ namespace ArbiBot
                                         user.SubTypeId == 3) && user.SubscriptionEnd>DateTime.Now) 
                                     {
                                         await botClient.SendMessage(user.TelegramId, message, ParseMode.Html);
-                                       
                                     }
                                 }
                             }
