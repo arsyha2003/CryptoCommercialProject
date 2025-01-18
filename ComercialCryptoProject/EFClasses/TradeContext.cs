@@ -13,7 +13,7 @@ namespace ArbiBot
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ExchangeInfo>().Property(i=>i.AvgPrice).HasColumnType("money");
+            modelBuilder.Entity<ExchangeInfo>().Property(i=>i.AvgPrice).HasColumnType("decimal");
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -34,6 +34,7 @@ namespace ArbiBot
             showPND = (string spread) => {  label1.Text = spread; };
             registrationBot = new RegistrationBot();
             pumpAndDumpBot = new PumpAndDumpBot();
+            arbitrageBot = new ArbitrageBot();
         }
         private void ClearTable(object sender, EventArgs e)
         {
@@ -46,23 +47,31 @@ namespace ArbiBot
         }
         private async void StartPumpAndDump(object sender, EventArgs e)
         {
+            pumpAndDumpBot.StopBot();
             await Task.Run(()=>pumpAndDumpBot.StartBot());
         }
         private void StopPumpAndDumpBot (object sender, EventArgs e)
         {
-            pumpAndDumpBot?.StopBot();
+            pumpAndDumpBot.StopBot();
         }
         private async void OnFormLoadEvent(object sender, EventArgs e)
         {
+            await Task.Run(() => pumpAndDumpBot.StartBot());
+            if (spreadRange2 != 0) 
+                arbitrageBot = new ArbitrageBot(spreadRange1, spreadRange2);
+            else
+                arbitrageBot = new ArbitrageBot();
+            await Task.Run(() => arbitrageBot.StartBot());
         }
         private async void StartArbitrageEvent(object sender, EventArgs e)
         {
-            if(spreadRange2!=0) arbitrageBot = new ArbitrageBot(spreadRange1, spreadRange2);
+            arbitrageBot.StopBot();
+            if (spreadRange2!=0) arbitrageBot = new ArbitrageBot(spreadRange1, spreadRange2);
             await Task.Run(()=>arbitrageBot.StartBot());
         }
         private void StopArbitrageEvent(object sender, EventArgs e)
         {
-            arbitrageBot?.StopBot(); 
+            arbitrageBot.StopBot(); 
         }
         private void OpenOptionsEvent(object sender, EventArgs e)
         {

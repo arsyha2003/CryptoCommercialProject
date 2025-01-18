@@ -224,35 +224,34 @@ namespace ArbiBot
                             break;
                         case "subInfo":
                             var users = db.Users.Where(p=>p.TelegramId == uId);
+                            if (users.Count() == 0)
+                            {
+                                await botClient.SendMessage(uId, $"Вас нет в базе данных бота, купите одну из наших подписок");
+                                await SendArbitrageKeyboardAsync(botClient, uId);
+                                await SendPumpAndDumpKeyboardAsync(botClient, uId);
+                                break;
+                            }
                             foreach (var user in users)
                             {
                                 switch (user.SubTypeId)
                                 {
                                     case 1:
-                                        await botClient.SendMessage(uId, $"Ваш UID: {user.TelegramId}\n" +
+                                        await botClient.SendMessage(uId, $"Ваши данные\n"+
+                                        $"Ваш UID: {user.TelegramId}\n" +
                                         $"Тип подписки: <b>Арбитражник</b>\n" +
-                                        $"Дата действия подписки: до{user.SubscriptionEnd.ToShortDateString()}\n" +
+                                        $"Дата действия подписки: до {user.SubscriptionEnd.ToShortDateString()}\n" +
                                         $"Ссылка на ботa - @arbi_crypto_mega_bot", ParseMode.Html);
                                         break;
                                     case 2:
-                                        await botClient.SendMessage(uId, $"Ваши данные\n" +
-                                        $"Ваш UID: {uId}\n" +
-                                        $"Тип подписки: <b>Pump&Dump скринер</b>\n" +
-                                        $"Дата действия подписки: до{user.SubscriptionEnd.ToShortDateString()}\n" +
+                                        await botClient.SendMessage(uId,$"Тип подписки: <b>Pump&Dump скринер</b>\n" +
+                                        $"Дата действия подписки: до {user.SubscriptionEnd.ToShortDateString()}\n" +
                                         $"Ссылка на бота - @PandDScreenerbot", ParseMode.Html);
                                         break;
                                     case 3:
-                                        await botClient.SendMessage(uId, $"Ваши данные\n" +
-                                        $"Ваш UID: {uId}\n" +
-                                        $"Тип подписки: Подписка на все продукты</b>\n" +
-                                        $"Дата действия подписки: до{user.SubscriptionEnd.ToShortDateString()}\n" +
+                                        await botClient.SendMessage(uId,$"Тип подписки: Подписка на все продукты</b>\n" +
+                                        $"Дата действия подписки: до {user.SubscriptionEnd.ToShortDateString()}\n" +
                                         $"Pump&Dump скринер - @PandDScreenerbott\n" +
                                         $"Арбитражник - @arbi_crypto_mega_bot", ParseMode.Html);
-                                        break;
-                                    default:
-                                        await botClient.SendMessage(uId, $"Вас нет в базе данных бота, купите одну из наших подписок");
-                                        await SendArbitrageKeyboardAsync(botClient, uId);
-                                        await SendPumpAndDumpKeyboardAsync(botClient, uId);
                                         break;
                                 }
                             }

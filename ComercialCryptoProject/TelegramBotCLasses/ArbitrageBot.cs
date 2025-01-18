@@ -72,7 +72,7 @@ namespace ArbiBot
                             else
                             {
                                 await botClient.SendMessage(user.TelegramId,$"Ваша подписка закончилась {user.SubscriptionEnd}\n" +
-                                    $"для продления подписки перейдите в бота - @arbi_reg_bot");
+                                    $"Для продления подписки перейдите в бота - @arbi_reg_bot");
                             }
                         }
                         else
