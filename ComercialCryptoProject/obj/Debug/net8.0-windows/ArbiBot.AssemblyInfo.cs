@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArbiBot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89fcd0c2084df08bc35dec5a7b161c97b797061e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ad888ceb1bf800b73a4f1b136290d6ca41fe814")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArbiBot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArbiBot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

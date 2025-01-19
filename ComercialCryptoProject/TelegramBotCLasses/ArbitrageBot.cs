@@ -56,7 +56,7 @@ namespace ArbiBot
                 long uId;
                 var message = update.Message;
                 uId = message.From.Id;
-                using (var db = new UsersContext())
+                using (var db = new Context())
                 {
                     if (message.Text == "/start")
                     {
@@ -98,7 +98,7 @@ namespace ArbiBot
             cts = new CancellationTokenSource();
             token = cts.Token;
             pares = arb.GetTradeParesAsync().Result;
-            using (var db = new UsersContext())
+            using (var db = new Context())
             {
                 while (true)
                 { 

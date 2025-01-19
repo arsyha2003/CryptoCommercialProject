@@ -6,13 +6,12 @@ using Telegram.Bot.Types.Enums;
 namespace ArbiBot
 {
     public partial class Form1 : Form
-    {       
+    {
         private RegistrationBot registrationBot;
         private ArbitrageBot arbitrageBot;
         private PumpAndDumpBot pumpAndDumpBot;
 
         public Action<decimal, decimal> setRanges;
-        public Action<string> showSpread;
         public Action<string> showPND;
 
         private decimal spreadRange1 = 0;
@@ -27,13 +26,14 @@ namespace ArbiBot
                 spreadRange1 = range1;
                 spreadRange2 = range2;
             };
+            showPND = (string msg) => { label8.Text = msg; };
             registrationBot = new RegistrationBot();
-            pumpAndDumpBot = new PumpAndDumpBot();
+            pumpAndDumpBot = new PumpAndDumpBot(showPND);
             arbitrageBot = new ArbitrageBot();
         }
         private void ClearTable(object sender, EventArgs e)
         {
-            using(var db = new UsersContext())
+            using (var db = new Context())
             {
                 db.Database.EnsureDeleted();
                 db.Database.EnsureCreated();
@@ -42,17 +42,25 @@ namespace ArbiBot
         }
         private async void StartPumpAndDump(object sender, EventArgs e)
         {
+            label6.Text = "Запущен";
             pumpAndDumpBot.StopBot();
-            await Task.Run(()=>pumpAndDumpBot.StartBot());
+            try
+            {
+                await Task.Run(() => pumpAndDumpBot.StartBot());
+            }
+            catch (Exception ex) { label6.Text = ex.Message; }
         }
-        private void StopPumpAndDumpBot (object sender, EventArgs e)
+        private void StopPumpAndDumpBot(object sender, EventArgs e)
         {
+            label6.Text = "Отключен";
             pumpAndDumpBot.StopBot();
         }
         private async void OnFormLoadEvent(object sender, EventArgs e)
         {
+            label5.Text = "Запущен";
+            label6.Text = "Запущен";
             await Task.Run(() => pumpAndDumpBot.StartBot());
-            if (spreadRange2 != 0) 
+            if (spreadRange2 != 0)
                 arbitrageBot = new ArbitrageBot(spreadRange1, spreadRange2);
             else
                 arbitrageBot = new ArbitrageBot();
@@ -60,13 +68,15 @@ namespace ArbiBot
         }
         private async void StartArbitrageEvent(object sender, EventArgs e)
         {
+            label5.Text = "Запущен";
             arbitrageBot.StopBot();
-            if (spreadRange2!=0) arbitrageBot = new ArbitrageBot(spreadRange1, spreadRange2);
-            await Task.Run(()=>arbitrageBot.StartBot());
+            if (spreadRange2 != 0) arbitrageBot = new ArbitrageBot(spreadRange1, spreadRange2);
+            await Task.Run(() => arbitrageBot.StartBot());
         }
         private void StopArbitrageEvent(object sender, EventArgs e)
         {
-            arbitrageBot.StopBot(); 
+            label5.Text = "Отключен";
+            arbitrageBot.StopBot();
         }
         private void OpenOptionsEvent(object sender, EventArgs e)
         {
@@ -75,14 +85,19 @@ namespace ArbiBot
         }
         private void SelectAllRegisteredUsersEvent(object sender, EventArgs e)
         {
-            kryptonListBox1.Items.Clear();
-            using (UsersContext db = new UsersContext())
+            kryptonComboBox1.Items.Clear();
+            using (Context db = new Context())
             {
                 foreach (var user in db.Users)
                 {
-                    kryptonListBox1.Items.Add($"id = {user.Id}. tgId = {user.TelegramId} subId = {user.SubTypeId} subEndDate - {user.SubscriptionEnd.ToShortDateString()}");
+                    kryptonComboBox1.Items.Add($"id = {user.Id}. tgId = {user.TelegramId} subId = {user.SubTypeId} subEndDate - {user.SubscriptionEnd.ToShortDateString()}");
                 }
             }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

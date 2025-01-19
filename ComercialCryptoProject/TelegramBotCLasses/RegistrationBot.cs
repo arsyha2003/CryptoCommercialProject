@@ -30,7 +30,7 @@ namespace ArbiBot
         private InlineKeyboardMarkup inlineKeyboard;
         public RegistrationBot()
         {
-            using (var db = new UsersContext()) { db.Database.EnsureCreated(); }
+            using (var db = new Context()) { db.Database.EnsureCreated(); }
             botClient = new TelegramBotClient(telegramApiToken);
             botClient.StartReceiving(
                 HandleUpdateAsync,
@@ -149,7 +149,7 @@ namespace ArbiBot
                 long uId;
                 var message = update.Message;
                 uId = message.From.Id;
-                using (var db = new UsersContext())
+                using (var db = new Context())
                 {
                     if (message.Text == "/start")
                         await SendMainKeyboardAsync(botClient, uId);
@@ -162,7 +162,7 @@ namespace ArbiBot
                 int bothCount;
                 int arbitrageCount;
                 int pumpAndDumpCount;
-                using (var db = new UsersContext())
+                using (var db = new Context())
                 {
                     arbitrageCount = db.Users.Include(u => u.SubType).Where(u => u.TelegramId == uId && u.SubTypeId == 1).Count();
                     pumpAndDumpCount = db.Users.Include(u => u.SubType).Where(u => u.TelegramId == uId && u.SubTypeId == 2).Count();
@@ -223,7 +223,8 @@ namespace ArbiBot
                                 $"Создатель, владелец и разработчик - @senyacm", ParseMode.Html);
                             break;
                         case "subInfo":
-                            var users = db.Users.Where(p=>p.TelegramId == uId);
+                            
+                            var users = db.Users.Where(p=>p.TelegramId == uId).ToList();
                             if (users.Count() == 0)
                             {
                                 await botClient.SendMessage(uId, $"Вас нет в базе данных бота, купите одну из наших подписок");
@@ -231,8 +232,10 @@ namespace ArbiBot
                                 await SendPumpAndDumpKeyboardAsync(botClient, uId);
                                 break;
                             }
+                            
                             foreach (var user in users)
                             {
+                                await botClient.SendMessage(uId, $"{user.SubTypeId}");
                                 switch (user.SubTypeId)
                                 {
                                     case 1:
@@ -248,7 +251,7 @@ namespace ArbiBot
                                         $"Ссылка на бота - @PandDScreenerbot", ParseMode.Html);
                                         break;
                                     case 3:
-                                        await botClient.SendMessage(uId,$"Тип подписки: Подписка на все продукты</b>\n" +
+                                        await botClient.SendMessage(uId, $"<b>Тип подписки: Подписка на все продукты</b>\n" +
                                         $"Дата действия подписки: до {user.SubscriptionEnd.ToShortDateString()}\n" +
                                         $"Pump&Dump скринер - @PandDScreenerbott\n" +
                                         $"Арбитражник - @arbi_crypto_mega_bot", ParseMode.Html);
@@ -272,7 +275,7 @@ namespace ArbiBot
                 var payment = update.Message.SuccessfulPayment;
                 string payload = payment.InvoicePayload;
                 long uId = update.Message.From.Id;
-                using (var db = new UsersContext())
+                using (var db = new Context())
                 {
                     switch (payload.ToLower())
                     {

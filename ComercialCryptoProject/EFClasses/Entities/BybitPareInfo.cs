@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ArbiBot
 {
-    public class ExchangeInfo
+    public class BybitPareInfo
     {
         public int Id { get; set; }
         public string Pare { get; set; }
