@@ -18,7 +18,7 @@ namespace ArbiBot
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<BybitPareInfo>().Property(i => i.AvgPrice).HasColumnType("decimal(28)");
+            modelBuilder.Entity<BybitPareInfo>().Property(i => i.AvgPrice).HasColumnType("decimal(28,10)");
             modelBuilder.Entity<UserData>()
                 .HasOne(u => u.SubType)
                 .WithMany()

@@ -67,18 +67,21 @@ namespace ArbiBot
                             if (user.SubscriptionEnd > DateTime.Now)
                             {
                                 await botClient.SendMessage(user.TelegramId, $"Ваша подписка актуальна до {user.SubscriptionEnd.ToShortDateString()}\n" +
-                                $"Для подробной информации о арбитражнике и других продуктах - @arbi_reg_bot");
+                                $"Для подробной информации о арбитражнике и других продуктах - @arbi_reg_bot\n" +
+                                $"Мой канал - https://t.me/it_monkey_cr");
                             }
                             else
                             {
                                 await botClient.SendMessage(user.TelegramId,$"Ваша подписка закончилась {user.SubscriptionEnd}\n" +
-                                    $"Для продления подписки перейдите в бота - @arbi_reg_bot");
+                                    $"Для продления подписки перейдите в бота - @arbi_reg_bot\n" +
+                                    $"Мой канал - https://t.me/it_monkey_cr");
                             }
                         }
                         else
                         {
                             await botClient.SendMessage(uId, $"У вас нет подписки на бота арбитражника\n" +
-                                $"Для покупки подписки на арбитражника и другие продукты перейдите в бота - @arbi_reg_bot");
+                                $"Для покупки подписки на арбитражника и другие продукты перейдите в бота - @arbi_reg_bot\n" +
+                                $"Мой канал - https://t.me/it_monkey_cr");
                         }
                     }
                 }

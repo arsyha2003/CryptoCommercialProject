@@ -21,16 +21,6 @@ namespace ArbiBot
             pares = GetTradePares();
             this.show = show;
         }
-        public string[] GetTradePares()
-        {
-            var bybitSymbols = client.V5Api.ExchangeData.GetSpotSymbolsAsync().Result.Data.List;
-            var tmp = bybitSymbols
-                        .Where(pare => pare.Name.Contains("USDT"))
-                        .Select(pare => pare.Name)
-                        .Distinct()
-                        .ToArray();
-            return tmp;
-        }
         public async Task StartBot(CancellationToken token, ITelegramBotClient bot)
         {
             pares = GetTradePares();
@@ -57,12 +47,17 @@ namespace ArbiBot
             {
                 if (token.IsCancellationRequested)
                     return;
-                show.Invoke($"запись {pares[i]}");
                 decimal price = GetOrderbook(pares[i]);
-                FillPareToDb(pares[i], price, DateTime.Now, db);
+                show.Invoke($"запись {pares[i]} {price}");
+                try
+                {
+                    FillPareToDb(pares[i], price, DateTime.Now, db);
+                }
+                catch (Exception ex) { show.Invoke(ex.Message); }
+
             }
         }
-        private async void CompareInfoFromDataBase(Context db,ITelegramBotClient botClient, CancellationToken token)
+        private async void CompareInfoFromDataBase(Context db, ITelegramBotClient botClient, CancellationToken token)
         {
             for (int i = 0; i < db.BybitInfo.Count(); i++)
             {
@@ -115,11 +110,21 @@ namespace ArbiBot
         }
         private decimal GetOrderbook(string pare)
         {
-            var orderBook = client.V5Api.ExchangeData.GetOrderbookAsync(Category.Spot, pare, 5).Result;
+            var orderBook = client.V5Api.ExchangeData.GetOrderbookAsync(Category.Spot, pare,5).Result;
             if (orderBook.Success)
-                return orderBook.Data.Asks.First().Price;
+                return orderBook.Data.Bids.ToList()[0].Price;
             else
                 return 0;
+        }
+        public string[] GetTradePares()
+        {
+            var bybitSymbols = client.V5Api.ExchangeData.GetSpotSymbolsAsync().Result.Data.List;
+            var tmp = bybitSymbols
+                        .Where(pare => pare.Name.Contains("USDT"))
+                        .Select(pare => pare.Name)
+                        .Distinct()
+                        .ToArray();
+            return tmp;
         }
         private bool FillPareToDb(string pare, decimal averagePrice, DateTime time, Context db)
         {

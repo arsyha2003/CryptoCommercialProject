@@ -85,12 +85,12 @@ namespace ArbiBot
         }
         private void SelectAllRegisteredUsersEvent(object sender, EventArgs e)
         {
-            kryptonComboBox1.Items.Clear();
+            listBox1.Items.Clear();
             using (Context db = new Context())
             {
                 foreach (var user in db.Users)
                 {
-                    kryptonComboBox1.Items.Add($"id = {user.Id}. tgId = {user.TelegramId} subId = {user.SubTypeId} subEndDate - {user.SubscriptionEnd.ToShortDateString()}");
+                    listBox1.Items.Add($"id = {user.Id}. tgId = {user.TelegramId} subId = {user.SubTypeId} subEndDate - {user.SubscriptionEnd.ToShortDateString()}");
                 }
             }
         }
