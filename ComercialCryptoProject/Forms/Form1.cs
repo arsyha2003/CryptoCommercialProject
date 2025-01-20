@@ -12,7 +12,6 @@ namespace ArbiBot
         private PumpAndDumpBot pumpAndDumpBot;
 
         public Action<decimal, decimal> setRanges;
-        public Action<string> showPND;
 
         private decimal spreadRange1 = 0;
         private decimal spreadRange2 = 10;
@@ -26,9 +25,8 @@ namespace ArbiBot
                 spreadRange1 = range1;
                 spreadRange2 = range2;
             };
-            showPND = (string msg) => { label8.Text = msg; };
             registrationBot = new RegistrationBot();
-            pumpAndDumpBot = new PumpAndDumpBot(showPND);
+            pumpAndDumpBot = new PumpAndDumpBot();
             arbitrageBot = new ArbitrageBot();
         }
         private void ClearTable(object sender, EventArgs e)
@@ -44,11 +42,9 @@ namespace ArbiBot
         {
             label6.Text = "Запущен";
             pumpAndDumpBot.StopBot();
-            try
-            {
-                await Task.Run(() => pumpAndDumpBot.StartBot());
-            }
-            catch (Exception ex) { label6.Text = ex.Message; }
+            
+            try { await Task.Run(() => pumpAndDumpBot.StartBot()); }
+            catch { }
         }
         private void StopPumpAndDumpBot(object sender, EventArgs e)
         {
@@ -59,19 +55,24 @@ namespace ArbiBot
         {
             label5.Text = "Запущен";
             label6.Text = "Запущен";
-            await Task.Run(() => pumpAndDumpBot.StartBot());
-            if (spreadRange2 != 0)
-                arbitrageBot = new ArbitrageBot(spreadRange1, spreadRange2);
-            else
-                arbitrageBot = new ArbitrageBot();
-            await Task.Run(() => arbitrageBot.StartBot());
+            try
+            {
+                await Task.Run(() => pumpAndDumpBot.StartBot());
+                if (spreadRange2 != 0)
+                    arbitrageBot = new ArbitrageBot(spreadRange1, spreadRange2);
+                else
+                    arbitrageBot = new ArbitrageBot();
+                await Task.Run(()=>arbitrageBot.StartBot());
+            }
+            catch(Exception ex) { label5.Text = ex.Message;}
         }
         private async void StartArbitrageEvent(object sender, EventArgs e)
         {
             label5.Text = "Запущен";
             arbitrageBot.StopBot();
             if (spreadRange2 != 0) arbitrageBot = new ArbitrageBot(spreadRange1, spreadRange2);
-            await Task.Run(() => arbitrageBot.StartBot());
+            try{await Task.Run(() => arbitrageBot.StartBot());}
+            catch { }
         }
         private void StopArbitrageEvent(object sender, EventArgs e)
         {

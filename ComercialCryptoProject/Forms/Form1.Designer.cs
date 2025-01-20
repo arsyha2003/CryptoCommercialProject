@@ -46,6 +46,7 @@
             label9 = new Label();
             listBox1 = new ListBox();
             button8 = new Button();
+            button9 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -283,12 +284,29 @@
             button8.UseVisualStyleBackColor = false;
             button8.Click += ClearTable;
             // 
+            // button9
+            // 
+            button9.BackColor = Color.MediumSlateBlue;
+            button9.FlatAppearance.BorderColor = Color.MidnightBlue;
+            button9.FlatAppearance.BorderSize = 5;
+            button9.FlatStyle = FlatStyle.Flat;
+            button9.Font = new Font("Bahnschrift", 11F);
+            button9.ForeColor = Color.Navy;
+            button9.Location = new Point(474, 530);
+            button9.Name = "button9";
+            button9.Padding = new Padding(4, 5, 4, 4);
+            button9.Size = new Size(446, 65);
+            button9.TabIndex = 25;
+            button9.Text = "Удалить выбранного пользователя";
+            button9.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkOrchid;
             ClientSize = new Size(986, 594);
+            Controls.Add(button9);
             Controls.Add(button8);
             Controls.Add(listBox1);
             Controls.Add(label9);
@@ -334,5 +352,6 @@
         private Label label9;
         private ListBox listBox1;
         private Button button8;
+        private Button button9;
     }
 }

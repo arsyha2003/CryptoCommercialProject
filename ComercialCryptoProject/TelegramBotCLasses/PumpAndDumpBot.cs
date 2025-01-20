@@ -16,14 +16,9 @@ namespace ArbiBot
     {
         private BybitPumpAndDump bb;
         private ITelegramBotClient botClient;
-        public CancellationTokenSource cts;
-        private Action<string> show;
-        public PumpAndDumpBot(Action<string>show)
+        public PumpAndDumpBot()
         {
-            this.show = show;
-            cts = new CancellationTokenSource();
             botClient = new TelegramBotClient("7836073764:AAE8hacw7Hrpgrd8un0LFG4lkUm_0lLtXc8");
-            bb = new BybitPumpAndDump(show);
             botClient.StartReceiving(
                 HandleUpdateAsync,
                 HandleErrorAsync,
@@ -31,12 +26,13 @@ namespace ArbiBot
                 {
                     AllowedUpdates = { }
                 });
+            bb = new BybitPumpAndDump();
         }
         public async void StartBot() 
         {
-            cts = new CancellationTokenSource();
-            await Task.Run(() => bb.StartBot(cts.Token, botClient));
+            bb.StartBot();
         }
+        public void StopBot() => bb.StopBot();
         private async Task HandleUpdateAsync(ITelegramBotClient client, Update update, CancellationToken token)
         {
             if (update == null) return;
@@ -77,11 +73,6 @@ namespace ArbiBot
         private Task HandleErrorAsync(ITelegramBotClient client, Exception exception, HandleErrorSource source, CancellationToken token)
         {
             return Task.CompletedTask;
-        }
-        public void StopBot()
-        {
-            cts.Cancel();
-        }
-        
+        }        
     }
 }

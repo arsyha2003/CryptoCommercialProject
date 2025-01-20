@@ -125,6 +125,10 @@ namespace ArbiBot
                 Task.Run(() => coinex.GetOrderBook(pare)),
                 Task.Run(() => bingX.GetOrderBook(pare)),
                 Task.Run(() => kucoin.GetOrderBook(pare)),
+            };
+            Task.WaitAll(tasks);
+            tasks = new Task[]
+            {
 
                 Task.Run(() => bybit.GetFeeRate(pare)),
                 Task.Run(() => binance.GetFeeRate(pare)),

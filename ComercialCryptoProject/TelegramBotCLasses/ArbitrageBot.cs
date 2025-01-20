@@ -104,9 +104,9 @@ namespace ArbiBot
             using (var db = new Context())
             {
                 while (true)
-                { 
+                {
                     if (token.IsCancellationRequested)
-                        return;   
+                        return;
                     foreach (var pare in pares)
                     {
                         try
@@ -119,8 +119,8 @@ namespace ArbiBot
                                 var users = db.Users.Include(u => u.SubType).Select(u => u);
                                 foreach (var user in users)
                                 {
-                                    if ((user.SubTypeId == 1  ||
-                                        user.SubTypeId == 3) && user.SubscriptionEnd>DateTime.Now) 
+                                    if ((user.SubTypeId == 1 ||
+                                        user.SubTypeId == 3) && user.SubscriptionEnd > DateTime.Now)
                                     {
                                         await botClient.SendMessage(user.TelegramId, message, ParseMode.Html);
                                     }
@@ -131,6 +131,7 @@ namespace ArbiBot
                     }
                 }
             }
+
         }
     }
 }
