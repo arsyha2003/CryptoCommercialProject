@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,6 +46,7 @@ namespace CryptoPtoject.PumpAndDump
                         ClearTables();
                         continue;
                     }
+
                 }
 
             }
@@ -110,7 +111,7 @@ namespace CryptoPtoject.PumpAndDump
                             }
                         }
                     }
-                    catch (Exception ex) { continue; }
+                    catch(Exception ex) { continue; }
                 }
             }
         }
@@ -159,6 +160,11 @@ namespace CryptoPtoject.PumpAndDump
         private bool FillPareToDb(string pare, decimal averagePrice, DateTime time)
         {
             using (var db = new Context())
+            catch(Exception ex) { return new string[] { string.Empty }; }
+        }
+        private bool FillPareToDb(string pare, decimal averagePrice, DateTime time)
+        {
+            using(var db = new Context())
             {
                 try
                 {
@@ -167,6 +173,7 @@ namespace CryptoPtoject.PumpAndDump
                     return true;
                 }
                 catch (Exception ex) { }
+                catch(Exception ex) { }
             }
             return false;
         }
