@@ -38,7 +38,7 @@ namespace CryptoPtoject.TelegramBots
         }
         public ArbitrageBot(decimal range1, decimal range2)
         {
-            arb = new ArbitrageWorkingrjrjv(range1, range2);
+            arb = new ArbitrageWorking(range1, range2);
             botClient = new TelegramBotClient("8050208272:AAFAeYmM5Jfq61d7BbzEtV_3XFdo7_q71T4");
             botClient.StartReceiving(
             HandleUpdateAsync,

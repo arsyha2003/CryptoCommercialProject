@@ -157,11 +157,7 @@ namespace CryptoPtoject.PumpAndDump
             }
             catch (Exception ex) { return new string[] { string.Empty }; }
         }
-        private bool FillPareToDb(string pare, decimal averagePrice, DateTime time)
-        {
-            using (var db = new Context())
-            catch(Exception ex) { return new string[] { string.Empty }; }
-        }
+
         private bool FillPareToDb(string pare, decimal averagePrice, DateTime time)
         {
             using(var db = new Context())
@@ -173,7 +169,6 @@ namespace CryptoPtoject.PumpAndDump
                     return true;
                 }
                 catch (Exception ex) { }
-                catch(Exception ex) { }
             }
             return false;
         }

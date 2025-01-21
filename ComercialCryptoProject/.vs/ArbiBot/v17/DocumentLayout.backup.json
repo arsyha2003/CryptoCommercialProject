@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\pumpanddump\\bybitpumpanddump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:pumpanddump\\bybitpumpanddump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\telegrambots\\pumpanddumpbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:telegrambots\\pumpanddumpbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\telegrambots\\arbitragebot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:telegrambots\\arbitragebot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,15 +23,11 @@
       "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:arbitrage\\exhanges\\okxechange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\pumpanddump\\bybitpumpanddump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:pumpanddump\\bybitpumpanddump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\forms\\optionsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:forms\\optionsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\forms\\optionsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\forms\\optionsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:forms\\optionsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -57,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\forms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:forms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\telegrambots\\pumpanddumpbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|solutionrelative:telegrambots\\pumpanddumpbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A9E06A03-23AE-4680-A97F-5846D79943E5}|ArbiBot.csproj|c:\\myfolder\\coding\\github\\cryptocommercialproject\\comercialcryptoproject\\telegrambots\\registrationbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -145,23 +145,26 @@
       "DocumentGroups": [
         {
           "DockedWidth": 525,
-          "SelectedChildIndex": 26,
+          "SelectedChildIndex": 22,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "OptionsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Forms\\OptionsForm.cs",
               "RelativeDocumentMoniker": "Forms\\OptionsForm.cs",
               "ToolTip": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Forms\\OptionsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "Forms\\OptionsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T01:23:44.093Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2025-01-21T01:23:44.093Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Forms\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Form1.Designer.cs",
@@ -169,12 +172,11 @@
               "RelativeToolTip": "Forms\\Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T01:16:48.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T01:16:48.908Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "OKXEchange.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Arbitrage\\Exhanges\\OKXEchange.cs",
               "RelativeDocumentMoniker": "Arbitrage\\Exhanges\\OKXEchange.cs",
@@ -182,8 +184,7 @@
               "RelativeToolTip": "Arbitrage\\Exhanges\\OKXEchange.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T01:11:22.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T01:11:22.568Z"
             },
             {
               "$type": "Document",
@@ -195,8 +196,7 @@
               "RelativeToolTip": "Arbitrage\\Exhanges\\MexcExchange.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T01:11:17.521Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T01:11:17.521Z"
             },
             {
               "$type": "Document",
@@ -208,12 +208,7 @@
               "RelativeToolTip": "Arbitrage\\Exhanges\\KucoinExchange.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T01:11:12.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "WhenOpened": "2025-01-21T01:11:12.89Z"
             },
             {
               "$type": "Document",
@@ -225,8 +220,7 @@
               "RelativeToolTip": "Arbitrage\\Exhanges\\GateIoExchange.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T01:11:07.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T01:11:07.494Z"
             },
             {
               "$type": "Document",
@@ -238,8 +232,7 @@
               "RelativeToolTip": "Arbitrage\\Exhanges\\Exchange.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T01:11:01.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T01:11:01.944Z"
             },
             {
               "$type": "Document",
@@ -251,8 +244,7 @@
               "RelativeToolTip": "Arbitrage\\Exhanges\\BingXExchange.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T01:10:44.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T01:10:44.48Z"
             },
             {
               "$type": "Document",
@@ -273,8 +265,7 @@
               "RelativeToolTip": "Arbitrage\\Exhanges\\BybitExchange.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T14:26:08.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T14:26:08.337Z"
             },
             {
               "$type": "Document",
@@ -286,8 +277,7 @@
               "RelativeToolTip": "Arbitrage\\Exhanges\\CoinexExchange.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T14:26:07.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T14:26:07.639Z"
             },
             {
               "$type": "Document",
@@ -299,24 +289,22 @@
               "RelativeToolTip": "Arbitrage\\Exhanges\\BitgetExchange.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T14:26:06.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T14:26:06.854Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Forms\\Form1.cs",
               "RelativeDocumentMoniker": "Forms\\Form1.cs",
               "ToolTip": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Forms\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "Forms\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T14:18:54.008Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2025-01-19T14:18:54.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Forms\\Form1.cs",
               "RelativeDocumentMoniker": "Forms\\Form1.cs",
@@ -324,12 +312,11 @@
               "RelativeToolTip": "Forms\\Form1.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T08:39:15.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-07T08:39:15.674Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Forms\\Program.cs",
               "RelativeDocumentMoniker": "Forms\\Program.cs",
@@ -337,12 +324,11 @@
               "RelativeToolTip": "Forms\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T06:43:47.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-18T06:43:47.868Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "OptionsForm.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Forms\\OptionsForm.cs",
               "RelativeDocumentMoniker": "Forms\\OptionsForm.cs",
@@ -350,12 +336,11 @@
               "RelativeToolTip": "Forms\\OptionsForm.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T06:43:40.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-18T06:43:40.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "OptionsForm.Designer.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Forms\\OptionsForm.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\OptionsForm.Designer.cs",
@@ -363,12 +348,11 @@
               "RelativeToolTip": "Forms\\OptionsForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T06:43:32.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-18T06:43:32.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "State.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Enums\\State.cs",
               "RelativeDocumentMoniker": "Enums\\State.cs",
@@ -376,8 +360,7 @@
               "RelativeToolTip": "Enums\\State.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T06:42:56.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-18T06:42:56.39Z"
             },
             {
               "$type": "Document",
@@ -389,8 +372,7 @@
               "RelativeToolTip": "Arbitrage\\Exhanges\\BinanceExchange.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T06:42:14.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-18T06:42:14.353Z"
             },
             {
               "$type": "Document",
@@ -402,8 +384,7 @@
               "RelativeToolTip": "DataBaseInteract\\Models\\TypesOfSubscribe.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T12:55:25.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T12:55:25.892Z"
             },
             {
               "$type": "Document",
@@ -415,18 +396,17 @@
               "RelativeToolTip": "DataBaseInteract\\Models\\BybitPareInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T07:06:40.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T07:06:40.832Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "BybitPumpAndDump.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\PumpAndDump\\BybitPumpAndDump.cs",
               "RelativeDocumentMoniker": "PumpAndDump\\BybitPumpAndDump.cs",
               "ToolTip": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\PumpAndDump\\BybitPumpAndDump.cs",
               "RelativeToolTip": "PumpAndDump\\BybitPumpAndDump.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAKoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T07:04:25.7Z",
               "EditorCaption": ""
@@ -441,12 +421,11 @@
               "RelativeToolTip": "TelegramBots\\RegistrationBot.cs",
               "ViewState": "AgIAACMBAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T07:00:09.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T07:00:09.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "PumpAndDumpBot.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\TelegramBots\\PumpAndDumpBot.cs",
               "RelativeDocumentMoniker": "TelegramBots\\PumpAndDumpBot.cs",
@@ -459,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ArbitrageWorking.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\Arbitrage\\ArbitrageWorking.cs",
               "RelativeDocumentMoniker": "Arbitrage\\ArbitrageWorking.cs",
@@ -467,18 +446,17 @@
               "RelativeToolTip": "Arbitrage\\ArbitrageWorking.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T04:48:36.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T04:48:36.159Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ArbitrageBot.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\TelegramBots\\ArbitrageBot.cs",
               "RelativeDocumentMoniker": "TelegramBots\\ArbitrageBot.cs",
-              "ToolTip": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\TelegramBots\\ArbitrageBot.cs",
-              "RelativeToolTip": "TelegramBots\\ArbitrageBot.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAADwvygAAAArAAAAAAAAAA==",
+              "ToolTip": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\TelegramBots\\ArbitrageBot.cs*",
+              "RelativeToolTip": "TelegramBots\\ArbitrageBot.cs*",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAACgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-12T04:40:38.692Z",
               "EditorCaption": ""
@@ -573,7 +551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "UserData.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\DataBaseInteract\\Models\\UserData.cs",
               "RelativeDocumentMoniker": "DataBaseInteract\\Models\\UserData.cs",
@@ -581,12 +559,11 @@
               "RelativeToolTip": "DataBaseInteract\\Models\\UserData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T08:31:38.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-07T08:31:38.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Context.cs",
               "DocumentMoniker": "C:\\MYFOLDER\\Coding\\GitHub\\CryptoCommercialProject\\ComercialCryptoProject\\DataBaseInteract\\Context.cs",
               "RelativeDocumentMoniker": "DataBaseInteract\\Context.cs",
@@ -594,8 +571,7 @@
               "RelativeToolTip": "DataBaseInteract\\Context.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T08:27:28.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-07T08:27:28.509Z"
             }
           ]
         },
