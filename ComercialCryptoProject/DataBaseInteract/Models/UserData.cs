@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArbiBot
+namespace CryptoPtoject.DataBaseInteract.Models
 {
     public class UserData
     {

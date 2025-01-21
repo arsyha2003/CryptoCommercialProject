@@ -1,63 +1,61 @@
-﻿using System;
+﻿using Bybit.Net.Clients;
+using CryptoExchange.Net.Authentication;
+using GateIo.Net.Clients;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using CryptoExchange.Net.Authentication;
-using Mexc.Net.Clients;
-using OKX.Net.Clients;
-namespace ArbiBot
+namespace CryptoPtoject.Arbitrage.Exchanges
 {
     /// <summary>
-    /// класс для работы с rest api биржи Mexc
+    /// класс для работы с rest api биржи GateIo
     /// </summary>
-    class MexcExchange : Exchange
+    class GateIoExchange : Exchange
     {
-        const string api = "mx0vglLO08i0p2KHUY";
-        const string apiSecret = "c2a209ae4ecc47608a1a1566462d6d43";
-        private MexcRestClient client;
-        public MexcExchange() : base()
+        private GateIoRestClient client;
+        const string api = "ea045c2349a75b3e55b5b8405be19fee";
+        const string apiSecret = "065ef13b995d1f25493e51c92880d7cd3da5af6c295141e7a4034e407df911dc";
+        public GateIoExchange()
         {
-            takerFeeRate = (decimal)0.01;
-            makerFeeRate = (decimal)0;
-            client = new MexcRestClient(options => { options.ApiCredentials = new ApiCredentials(api, apiSecret); });
+            client = new GateIoRestClient(options => { options.ApiCredentials = new ApiCredentials(api, apiSecret); });
+            makerFeeRate = (decimal)0.015;
+            takerFeeRate = (decimal)0.05;
         }
         public override void GetTradePares()
         {
             var tmp = new List<string>();
-            var mexcSymbols = client.SpotApi.ExchangeData.GetApiSymbolsAsync().Result.Data.ToList();
-            tmp = mexcSymbols
-              .Select(pare => pare)
-              .Distinct()
-              .ToList();
+            var gateIoSymbols = client.SpotApi.ExchangeData.GetSymbolsAsync().Result.Data.ToList();
+            tmp = gateIoSymbols
+                   .Where(pare => pare.Name.Replace("_USDT", "USDT").Contains("USDT"))
+                  .Select(pare => pare.Name.Replace("_USDT", "USDT"))
+                  .Distinct()
+                  .ToList();
             tokenList = tmp.ToArray();
         }
         public override void GetFeeRate(string pareName)
         {
             blockChainFullName = new List<string>();
             blockChainIsDepozitable = new List<bool>();
-            blockChainWithdrawFee = new List<decimal>();
             blockChain = new List<string>();
             blockChainIsWithdrawable = new List<bool>();
+            blockChainWithdrawFee = new List<decimal>();
             try
             {
-                var networkList = client.SpotApi.Account.GetUserAssetsAsync().Result;
-                if (networkList.Success)
+                var networkList = client.SpotApi.ExchangeData.GetNetworksAsync(pareName.Replace("USDT", string.Empty)).Result;
+                var withdrawFee = client.SpotApi.Account.GetWithdrawStatusAsync(pareName.Replace("USDT", string.Empty)).Result;
+
+                if (networkList.Success && withdrawFee.Success)
                 {
                     foreach (var network in networkList.Data.ToList())
                     {
-                        if (network.Asset == pareName.Replace("USDT", string.Empty))
-                        {
-                            foreach (var a in network.Networks.ToList())
-                            {
-                                blockChainFullName.Add(a.Network);
-                                blockChain.Add(a.Network);
-                                blockChainWithdrawFee.Add((decimal)a.WithdrawFee);
-                                blockChainIsWithdrawable.Add(a.WithdrawEnabled);
-                                blockChainIsDepozitable.Add(a.DepositEnabled);
-                            }
-                        }
+                        blockChain.Add(network.Network);
+                        blockChainFullName.Add(network.NetworkEn);
+                        blockChainIsWithdrawable.Add(!network.IsWithdrawalDisabled);
+                        blockChainIsDepozitable.Add(!network.IsDepositDisabled);
+                        blockChainWithdrawFee.Add(withdrawFee.Data.ToList().First().WithdrawalFeeFixed);
                     }
                 }
                 else return;
@@ -70,7 +68,7 @@ namespace ArbiBot
             bidQuantity = 0;
             avgBuyPrice = 0;
             avgSellPrice = 0;
-            var orderBook = client.SpotApi.ExchangeData.GetOrderBookAsync(pareName, 5).Result;
+            var orderBook = client.SpotApi.ExchangeData.GetOrderBookAsync(pareName.Replace("USDT", "_") + "USDT", 0, 5).Result;
             if (orderBook.Success)
             {
                 var bids = orderBook.Data.Bids.ToList();
@@ -109,10 +107,11 @@ namespace ArbiBot
                 avgBuyPrice = 0;
                 avgSellPrice = 0;
             }
+
         }
         public override string ToString()
         {
-            return $"Mexc: {Environment.NewLine}" +
+            return $"GateIo: {Environment.NewLine}" +
                 $"asks price: {asksPrice}{Environment.NewLine}" +
                 $"bids price: {bidsPrice}{Environment.NewLine}" +
                 $"bidQuantity: {bidQuantity}{Environment.NewLine}" +

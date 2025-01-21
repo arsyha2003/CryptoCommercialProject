@@ -14,7 +14,7 @@ using Kucoin.Net.Clients;
 using Mexc.Net.Clients;
 using OKX.Net.Clients;
 
-namespace ArbiBot
+namespace CryptoPtoject.Arbitrage.Exchanges
 {
     /// <summary>
     /// абстрактный класс, предназначенный для работы с биржами.

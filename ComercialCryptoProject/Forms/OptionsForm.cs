@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ArbiBot
+namespace CryptoPtoject
 {
     public partial class OptionsForm : Form
     {

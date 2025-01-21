@@ -1,4 +1,4 @@
-namespace ArbiBot
+namespace CryptoPtoject.Forms
 {
     internal static class Program
     {

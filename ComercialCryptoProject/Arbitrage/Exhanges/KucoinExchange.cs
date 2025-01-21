@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArbiBot
+namespace CryptoPtoject.Arbitrage.Exchanges
 {
     /// <summary>
     /// класс для работы с rest api биржи Kucoin

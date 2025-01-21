@@ -399,8 +399,6 @@ C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\bin\Deb
 C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\ArbiBot.csproj.AssemblyReference.cache
-C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\ArbiBot.Form1.resources
-C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\ArbiBot.OptionsForm.resources
 C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\ArbiBot.Properties.Resources.resources
 C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\ArbiBot.csproj.GenerateResource.cache
 C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\ArbiBot.GeneratedMSBuildEditorConfig.editorconfig
@@ -415,3 +413,5 @@ C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Deb
 C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\ArbiBot.genruntimeconfig.cache
 C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\ref\ArbiBot.dll
 C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\bin\Debug\net8.0-windows\Krypton.Toolkit.dll
+C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\CryptoPtoject.Form1.resources
+C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\CryptoPtoject.OptionsForm.resources

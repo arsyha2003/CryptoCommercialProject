@@ -1,39 +1,36 @@
-﻿using BingX.Net.Clients;
-using Bybit.Net.Clients;
-using CryptoExchange.Net.Authentication;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArbiBot
+using CryptoExchange.Net.Authentication;
+using Mexc.Net.Clients;
+using OKX.Net.Clients;
+namespace CryptoPtoject.Arbitrage.Exchanges
 {
     /// <summary>
-    /// класс для работы с rest api биржи BingX
+    /// класс для работы с rest api биржи Mexc
     /// </summary>
-    class BingXExchange : Exchange
+    class MexcExchange : Exchange
     {
-        const string api = "9tVuF10Rvpz9HEvWPBaq0e8AmJfhPq89guzq2Z5v5vnv6Xls1smDom8rv41adn8BQov1wC9N6ZqciqjS74g";
-        const string apiSecret = "RFyuJavW2iYBWTbblbO9E79rG1HDOfNLIRF4qJ1eUVh3fU5TNs4SjeNWh749za4ql6pOLfjHBNsFsh8vNcAMw";
-
-
-        private BingXRestClient client;
-        public BingXExchange() : base()
+        const string api = "mx0vglLO08i0p2KHUY";
+        const string apiSecret = "c2a209ae4ecc47608a1a1566462d6d43";
+        private MexcRestClient client;
+        public MexcExchange() : base()
         {
-            client = new BingXRestClient(options => { options.ApiCredentials = new ApiCredentials(api, apiSecret); });
-            takerFeeRate = (decimal)0.1;
-            makerFeeRate = (decimal)0.1;
+            takerFeeRate = (decimal)0.01;
+            makerFeeRate = (decimal)0;
+            client = new MexcRestClient(options => { options.ApiCredentials = new ApiCredentials(api, apiSecret); });
         }
         public override void GetTradePares()
         {
             var tmp = new List<string>();
-            var bingXSymbols = client.SpotApi.ExchangeData.GetSymbolsAsync().Result.Data.ToList();
-            tmp = bingXSymbols
-                              .Where(pare => pare.Name.Contains("USDT"))
-                              .Select(pare => pare.Name.Replace("-",string.Empty))
-                              .Distinct()
-                              .ToList();
+            var mexcSymbols = client.SpotApi.ExchangeData.GetApiSymbolsAsync().Result.Data.ToList();
+            tmp = mexcSymbols
+              .Select(pare => pare)
+              .Distinct()
+              .ToList();
             tokenList = tmp.ToArray();
         }
         public override void GetFeeRate(string pareName)
@@ -45,20 +42,20 @@ namespace ArbiBot
             blockChainIsWithdrawable = new List<bool>();
             try
             {
-                var assetInfo = client.SpotApi.Account.GetAssetsAsync().Result;
-                if (assetInfo.Success)
+                var networkList = client.SpotApi.Account.GetUserAssetsAsync().Result;
+                if (networkList.Success)
                 {
-                    foreach (var asset in assetInfo.Data.ToList())
+                    foreach (var network in networkList.Data.ToList())
                     {
-                        if (asset.Asset == pareName.Replace("USDT", string.Empty))
+                        if (network.Asset == pareName.Replace("USDT", string.Empty))
                         {
-                            foreach (var network in asset.Networks)
+                            foreach (var a in network.Networks.ToList())
                             {
-                                blockChain.Add(network.Network.ToUpper());
-                                blockChainFullName.Add(network.Network);
-                                blockChainIsWithdrawable.Add(network.WithdrawEnabled);
-                                blockChainWithdrawFee.Add(network.WithdrawFee);
-                                blockChainIsDepozitable.Add(network.DepositEnabled);
+                                blockChainFullName.Add(a.Network);
+                                blockChain.Add(a.Network);
+                                blockChainWithdrawFee.Add((decimal)a.WithdrawFee);
+                                blockChainIsWithdrawable.Add(a.WithdrawEnabled);
+                                blockChainIsDepozitable.Add(a.DepositEnabled);
                             }
                         }
                     }
@@ -73,7 +70,7 @@ namespace ArbiBot
             bidQuantity = 0;
             avgBuyPrice = 0;
             avgSellPrice = 0;
-            var orderBook = client.SpotApi.ExchangeData.GetOrderBookAsync(pareName.Replace("USDT", string.Empty) + "-USDT", 5).Result;
+            var orderBook = client.SpotApi.ExchangeData.GetOrderBookAsync(pareName, 5).Result;
             if (orderBook.Success)
             {
                 var bids = orderBook.Data.Bids.ToList();
@@ -115,7 +112,7 @@ namespace ArbiBot
         }
         public override string ToString()
         {
-            return $"BingX: {Environment.NewLine}" +
+            return $"Mexc: {Environment.NewLine}" +
                 $"asks price: {asksPrice}{Environment.NewLine}" +
                 $"bids price: {bidsPrice}{Environment.NewLine}" +
                 $"bidQuantity: {bidQuantity}{Environment.NewLine}" +

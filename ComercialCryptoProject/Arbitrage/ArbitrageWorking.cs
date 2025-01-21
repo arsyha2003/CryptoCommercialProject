@@ -11,13 +11,11 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace ArbiBot
+using CryptoPtoject.Arbitrage.Exchanges;
+using CryptoPtoject.Enums;
+namespace CryptoPtoject.Arbitrage
 {   
-    /// <summary>
-    /// класс занимающийся проверкой арбитражных ситуаций по паре
-    /// </summary>
-    public class GoArbitrage
+    public class ArbitrageWorking
     {
         private TextInfo myTI = new CultureInfo("en-US", false).TextInfo;
         private int buyIndex;
@@ -64,7 +62,7 @@ namespace ArbiBot
         public decimal spreadRange1=(decimal)0.2;
         public decimal spreadRange2 = 6;
         private string currentPare;
-        public GoArbitrage()
+        public ArbitrageWorking()
         {
             bybit = new BybitExchange();
             binance = new BinanceExchange();
@@ -76,7 +74,7 @@ namespace ArbiBot
             bingX = new BingXExchange();
             kucoin = new KucoinExchange();
         }
-        public GoArbitrage(decimal spreadRange1, decimal spreadRange2)
+        public ArbitrageWorking(decimal spreadRange1, decimal spreadRange2)
         {
             bybit = new BybitExchange();
             binance = new BinanceExchange();

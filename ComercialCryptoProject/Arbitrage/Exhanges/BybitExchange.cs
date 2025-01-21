@@ -1,5 +1,5 @@
-﻿using BingX.Net.Objects.Models;
-using Bitget.Net.Clients;
+﻿using Bybit.Net.Clients;
+using CryptoExchange.Net.Authentication;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -7,54 +7,58 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArbiBot
+namespace CryptoPtoject.Arbitrage.Exchanges
 {
     /// <summary>
-    /// класс для работы с rest api биржи Bitget
+    /// класс для работы с rest api биржи Bybit
     /// </summary>
-    class BitGetExchange : Exchange
+    class BybitExchange : Exchange
     {
-        private BitgetRestClient client;
-        public BitGetExchange()
+        //апи обновлено
+        const string api = "Rmxk7Kx2tX6lh9V3Td";
+        const string apiSecret = "t5ikBA8o0KpOoRPr5t44vQUvTYUpeMebJqGT";
+
+        private BybitRestClient client;
+        public BybitExchange() : base()
         {
-            client = new BitgetRestClient();
+            client = new BybitRestClient(options => { options.ApiCredentials = new ApiCredentials(api, apiSecret); });
+            takerFeeRate = (decimal)0.18;
             makerFeeRate = (decimal)0.1;
-            takerFeeRate = (decimal)0.1;
         }
         public override void GetTradePares()
         {
             var tmp = new List<string>();
-            var bitgetSymbols = client.SpotApi.ExchangeData.GetSymbolsAsync().Result.Data.ToList();
-            tmp = bitgetSymbols
-                          .Where(pare => pare.Name.Contains("USDT"))
-                          .Select(pare => pare.Name)
-                          .Distinct()
-                          .ToList();
+            var bybitSymbols = client.V5Api.ExchangeData.GetSpotSymbolsAsync().Result.Data.List;
+            tmp = bybitSymbols
+                        .Where(pare=>pare.Name.Contains("USDT"))
+                        .Select(pare=>pare.Name)
+                        .Distinct()
+                        .ToList();
             tokenList = tmp.ToArray();
         }
         public override void GetFeeRate(string pareName)
         {
             blockChainFullName = new List<string>();
             blockChainIsDepozitable = new List<bool>();
+            blockChainWithdrawFee = new List<decimal>();
             blockChain = new List<string>();
             blockChainIsWithdrawable = new List<bool>();
-            blockChainWithdrawFee = new List<decimal>();
             try
             {
-                var assetInfo = client.SpotApi.ExchangeData.GetAssetsAsync().Result;
+                var assetInfo = client.V5Api.Account.GetAssetInfoAsync().Result;
                 if (assetInfo.Success)
                 {
-                    foreach (var asset in assetInfo.Data.ToList())
+                    foreach (var asset in assetInfo.Data.Assets.ToList())
                     {
-                        if (asset.AssetName == pareName.Replace("USDT", string.Empty))
+                        if (asset.Asset == pareName.Replace("USDT", string.Empty))
                         {
-                            foreach (var network in asset.Networks)
+                            foreach (var network in asset.Networks.ToList())
                             {
-                                blockChainFullName.Add(network.Name!);
-                                blockChain.Add(network.Name!.ToUpper());
-                                blockChainIsWithdrawable.Add(network.Withdrawable);
-                                blockChainIsDepozitable.Add(network.Depositable);
-                                blockChainWithdrawFee.Add(network.WithdrawFee);
+                                blockChainFullName.Add(network.Network);
+                                blockChain.Add(network.Network);
+                                blockChainWithdrawFee.Add((decimal)network.WithdrawFee!);
+                                blockChainIsWithdrawable.Add((bool)network.NetworkWithdraw!);
+                                blockChainIsDepozitable.Add((bool)network.NetworkDeposit!);
                             }
                         }
                     }
@@ -69,7 +73,7 @@ namespace ArbiBot
             bidQuantity = 0;
             avgBuyPrice = 0;
             avgSellPrice = 0;
-            var orderBook = client.SpotApi.ExchangeData.GetOrderBookAsync(pareName + "_SPBL", null, 5).Result;
+            var orderBook = client.V5Api.ExchangeData.GetOrderbookAsync(Bybit.Net.Enums.Category.Spot, pareName, 5).Result;
             if (orderBook.Success)
             {
                 var bids = orderBook.Data.Bids.ToList();
@@ -111,7 +115,7 @@ namespace ArbiBot
         }
         public override string ToString()
         {
-            return $"Bitget: {Environment.NewLine}" +
+            return $"Bybit: {Environment.NewLine}" +
                 $"asks price: {asksPrice}{Environment.NewLine}" +
                 $"bids price: {bidsPrice}{Environment.NewLine}" +
                 $"bidQuantity: {bidQuantity}{Environment.NewLine}" +

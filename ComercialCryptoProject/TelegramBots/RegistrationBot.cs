@@ -1,24 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 using Telegram.Bot.Types.Payments;
-using static System.Net.Mime.MediaTypeNames;
 using Telegram.Bot.Types.ReplyMarkups;
 using Telegram.Bot.Args;
-using System.Security.Cryptography;
-using System.Windows.Forms;
-using Microsoft.VisualBasic.ApplicationServices;
 using Microsoft.EntityFrameworkCore;
-using Binance.Net.Enums;
+using CryptoPtoject.DataBaseInteract;
+using CryptoPtoject.DataBaseInteract.Models;
 
-
-
-namespace ArbiBot
+namespace CryptoPtoject.TelegramBots
 {
     /// <summary>
     /// класс бота, отвечающего за регистрацию

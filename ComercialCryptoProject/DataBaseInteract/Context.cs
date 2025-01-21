@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using CryptoPtoject.DataBaseInteract.Models;
 
-namespace ArbiBot
+namespace CryptoPtoject.DataBaseInteract
 {
     public class Context : DbContext
     {

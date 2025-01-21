@@ -1,60 +1,61 @@
-﻿using CoinEx.Net.Clients;
-using Newtonsoft.Json.Linq;
+﻿using Binance.Net.Clients;
+using CryptoExchange.Net.Authentication;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArbiBot
+namespace CryptoPtoject.Arbitrage.Exchanges
 {
     /// <summary>
-    /// класс для работы с rest api биржи Coinex
+    /// класс для работы с rest api биржи Binance
     /// </summary>
-    class CoinExExchange : Exchange
+    class BinanceExchange : Exchange
     {
-        private CoinExRestClient client;
-        public CoinExExchange()
+        const string api = "1MYgj9lad0UBhGzuTQI7F0PSCSVQGVUXntLVtEoOtooU2nfbYpB0Qp4OH2gG31dW";
+        const string apiSecret = "iYpcidDkBabwHbAk6XLzwYrKVeKqkq91YQ20YI21r6XhhyVXmpqBlKlfZGP0PV5d";
+        private BinanceRestClient client;
+        public BinanceExchange()
         {
-            client = new CoinExRestClient();
-            makerFeeRate = (decimal)0.3;
-            takerFeeRate = (decimal)0.3;
+            client = new BinanceRestClient(options => { options.ApiCredentials = new ApiCredentials(api, apiSecret); });
+            makerFeeRate = (decimal)0.015;
+            takerFeeRate = (decimal)0.015;
         }
         public override void GetTradePares()
         {
-            var tmp = new List<string>();
-            var coinexSymbols = client.SpotApi.ExchangeData.GetSymbolsAsync().Result.Data.ToList();
-            tmp = coinexSymbols
-               .Where(pare => pare.Contains("USDT"))
-               .Select(pare => pare)
-               .Distinct()
-               .ToList();
-            tokenList = tmp.ToArray();
+            //TODO
         }
         public override void GetFeeRate(string pareName)
         {
             blockChainFullName = new List<string>();
             blockChainIsDepozitable = new List<bool>();
+            blockChainWithdrawFee = new List<decimal>();
             blockChain = new List<string>();
             blockChainIsWithdrawable = new List<bool>();
-            blockChainWithdrawFee = new List<decimal>();
-
-            var assetInfo = client.SpotApi.ExchangeData.GetAssetsAsync(pareName.Replace("USDT", string.Empty)).Result;
-            if (assetInfo.Success)
+            var assetInfo = client.SpotApi.Account.GetUserAssetsAsync().Result;
+            try
             {
-                foreach (var asset in assetInfo.Data.ToList())
+                if (assetInfo.Success)
                 {
-                    if (asset.Value.WithdrawFee != 0)
+                    foreach (var asset in assetInfo.Data.ToList())
                     {
-                        blockChainFullName.Add(asset.Value.Network);
-                        blockChain.Add(asset.Value.Network.ToUpper());
-                        blockChainIsWithdrawable.Add(asset.Value.CanWithdraw);
-                        blockChainWithdrawFee.Add(asset.Value.WithdrawFee);
-                        blockChainIsDepozitable.Add(asset.Value.CanDeposit);
+                        if (asset.Asset == pareName.Replace("USDT", string.Empty))
+                        {
+                            foreach (var network in asset.NetworkList)
+                            {
+                                blockChainFullName.Add(network.Network);
+                                blockChain.Add(network.Network.ToUpper());
+                                blockChainWithdrawFee.Add(network.WithdrawFee);
+                                blockChainIsWithdrawable.Add(network.WithdrawEnabled);
+                                blockChainIsDepozitable.Add(network.DepositEnabled);
+
+                            }
+                        }
                     }
                 }
             }
-            else return;
+            catch { }
         }
         public override void GetOrderBook(string pareName)
         {
@@ -62,7 +63,7 @@ namespace ArbiBot
             bidQuantity = 0;
             avgBuyPrice = 0;
             avgSellPrice = 0;
-            var orderBook = client.SpotApi.ExchangeData.GetOrderBookAsync(pareName, 0, 20).Result;
+            var orderBook = client.SpotApi.ExchangeData.GetOrderBookAsync(pareName, 5).Result;
             if (orderBook.Success)
             {
                 var bids = orderBook.Data.Bids.ToList();
@@ -91,7 +92,7 @@ namespace ArbiBot
                     asksPrice = asks[0].Price;
                 }
                 catch { asksPrice = 0; askQuantity = 0; avgSellPrice = 0; }
-                }
+            }
             else
             {
                 bidsPrice = 0;
@@ -104,7 +105,7 @@ namespace ArbiBot
         }
         public override string ToString()
         {
-            return $"Coinex: {Environment.NewLine}" +
+            return $"Binance: {Environment.NewLine}" +
                 $"asks price: {asksPrice}{Environment.NewLine}" +
                 $"bids price: {bidsPrice}{Environment.NewLine}" +
                 $"bidQuantity: {bidQuantity}{Environment.NewLine}" +

@@ -1,4 +1,4 @@
-﻿namespace ArbiBot
+﻿namespace CryptoPtoject
 {
     partial class Form1
     {

@@ -10,12 +10,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic.ApplicationServices;
 using System.Security.Cryptography;
 using Telegram.Bot.Polling;
-
-namespace ArbiBot
+using CryptoPtoject.Arbitrage;
+using CryptoPtoject.DataBaseInteract;
+namespace CryptoPtoject.TelegramBots
 {
     public class ArbitrageBot
     {
-        private GoArbitrage arb;
+        private ArbitrageWorking arb;
         private ITelegramBotClient botClient;
         private CancellationTokenSource cts;
         private CancellationToken token;
@@ -24,7 +25,7 @@ namespace ArbiBot
         private string[] pares;
         public ArbitrageBot()
         {
-            arb = new GoArbitrage();
+            arb = new ArbitrageWorking();
             botClient = new TelegramBotClient("8050208272:AAFAeYmM5Jfq61d7BbzEtV_3XFdo7_q71T4");
             botClient.StartReceiving(
             HandleUpdateAsync,
@@ -37,7 +38,7 @@ namespace ArbiBot
         }
         public ArbitrageBot(decimal range1, decimal range2)
         {
-            arb = new GoArbitrage(range1, range2);
+            arb = new ArbitrageWorkingrjrjv(range1, range2);
             botClient = new TelegramBotClient("8050208272:AAFAeYmM5Jfq61d7BbzEtV_3XFdo7_q71T4");
             botClient.StartReceiving(
             HandleUpdateAsync,

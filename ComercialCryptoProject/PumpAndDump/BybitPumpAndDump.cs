@@ -8,12 +8,14 @@ using Bybit.Net.Enums;
 using Microsoft.EntityFrameworkCore;
 using Telegram.Bot;
 using Telegram.Bot.Types.Enums;
-namespace ArbiBot
+using CryptoPtoject.DataBaseInteract;
+using CryptoPtoject.DataBaseInteract.Models;
+namespace CryptoPtoject.PumpAndDump
 {
     public class BybitPumpAndDump
     {
-        public CancellationTokenSource cts;
         private ITelegramBotClient botClient;
+        public CancellationTokenSource cts;
         private BybitRestClient client;
         private string[] pares;
         public BybitPumpAndDump()
@@ -22,13 +24,13 @@ namespace ArbiBot
             client = new BybitRestClient();
             pares = GetTradePares();
         }
-        public async void StartBot()
+        public async Task StartBot()
         {
+            cts = new CancellationTokenSource();
+            var token = cts.Token;
             try
             {
                 pares = GetTradePares();
-                cts = new CancellationTokenSource();
-                var token = cts.Token;
                 while (true)
                 {
                     try
@@ -39,33 +41,34 @@ namespace ArbiBot
                         SetInfoToDataBase(token);
                         CompareInfoFromDataBase(token);
                     }
-                    catch { ClearTables(); continue; }
+                    catch (Exception ex)
+                    {
+                        ClearTables();
+                        continue;
+                    }
                 }
-                
+
             }
             catch { }
         }
         public void StopBot() => cts.Cancel();
         private void SetInfoToDataBase(CancellationToken token)
         {
-            using(var db = new Context())
+            try
             {
-                try
+                for (int i = 0; i < pares.Length; i++)
                 {
-                    for (int i = 0; i < pares.Length; i++)
-                    {
-                        if (token.IsCancellationRequested)
-                            return;
-                        decimal price = GetOrderbook(pares[i]);
-                        FillPareToDb(pares[i], price, DateTime.Now, db);
-                    }
+                    if (token.IsCancellationRequested)
+                        return;
+                    decimal price = GetOrderbook(pares[i]);
+                    FillPareToDb(pares[i], price, DateTime.Now);
                 }
-                catch { }
             }
+            catch { }
         }
         private async void CompareInfoFromDataBase(CancellationToken token)
         {
-            using(var db = new Context())
+            using (var db = new Context())
             {
                 for (int i = 0; i < db.BybitInfo.Count(); i++)
                 {
@@ -107,13 +110,13 @@ namespace ArbiBot
                             }
                         }
                     }
-                    catch { continue; }
+                    catch (Exception ex) { continue; }
                 }
             }
         }
         private void ClearTables()
         {
-            using(var db = new Context())
+            using (var db = new Context())
             {
                 db.Database.ExecuteSqlRaw("TRUNCATE TABLE BybitInfo");
             }
@@ -125,7 +128,7 @@ namespace ArbiBot
                 var sp = ((firstPrice - lastPrice) / firstPrice) * 100;
                 return sp;
             }
-            catch { return 0; }
+            catch (Exception ex) { return 0; }
         }
         private decimal GetOrderbook(string pare)
         {
@@ -137,7 +140,7 @@ namespace ArbiBot
                 else
                     return 0;
             }
-            catch { return 0; }
+            catch (Exception ex) { return 0; }
         }
         public string[] GetTradePares()
         {
@@ -151,17 +154,21 @@ namespace ArbiBot
                             .ToArray();
                 return tmp;
             }
-            catch { return new string[] { string.Empty }; }
+            catch (Exception ex) { return new string[] { string.Empty }; }
         }
-        private bool FillPareToDb(string pare, decimal averagePrice, DateTime time, Context db)
+        private bool FillPareToDb(string pare, decimal averagePrice, DateTime time)
         {
-            try
+            using (var db = new Context())
             {
-                db.BybitInfo.Add(new BybitPareInfo() { Pare = pare, AvgPrice = averagePrice, Time = time });
-                db.SaveChanges();
-                return true;
+                try
+                {
+                    db.BybitInfo.Add(new BybitPareInfo() { Pare = pare, AvgPrice = averagePrice, Time = time });
+                    db.SaveChanges();
+                    return true;
+                }
+                catch (Exception ex) { }
             }
-            catch { return false; }
+            return false;
         }
     }
 }
