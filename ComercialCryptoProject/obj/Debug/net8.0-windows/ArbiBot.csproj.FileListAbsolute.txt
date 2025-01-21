@@ -413,5 +413,5 @@ C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Deb
 C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\ArbiBot.genruntimeconfig.cache
 C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\ref\ArbiBot.dll
 C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\bin\Debug\net8.0-windows\Krypton.Toolkit.dll
-C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\CryptoPtoject.Form1.resources
-C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\CryptoPtoject.OptionsForm.resources
+C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\CryptoProject.Form1.resources
+C:\MYFOLDER\Coding\GitHub\CryptoCommercialProject\ComercialCryptoProject\obj\Debug\net8.0-windows\CryptoProject.OptionsForm.resources

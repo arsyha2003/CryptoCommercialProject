@@ -10,9 +10,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic.ApplicationServices;
 using System.Security.Cryptography;
 using Telegram.Bot.Polling;
-using CryptoPtoject.Arbitrage;
-using CryptoPtoject.DataBaseInteract;
-namespace CryptoPtoject.TelegramBots
+using CryptoProject.Arbitrage;
+using CryptoProject.DataBaseInteract;
+namespace CryptoProject.TelegramBots
 {
     public class ArbitrageBot
     {

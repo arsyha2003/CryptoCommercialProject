@@ -11,9 +11,10 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CryptoPtoject.Arbitrage.Exchanges;
-using CryptoPtoject.Enums;
-namespace CryptoPtoject.Arbitrage
+using CryptoProject.Arbitrage.Exchanges;
+using CryptoProject.Enums;
+using CryptoProject.Tools;
+namespace CryptoProject.Arbitrage
 {   
     public class ArbitrageWorking
     {

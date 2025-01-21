@@ -9,10 +9,10 @@ using Telegram.Bot;
 using static System.Net.WebRequestMethods;
 using Microsoft.EntityFrameworkCore;
 using Telegram.Bot.Polling;
-using CryptoPtoject.PumpAndDump;
-using CryptoPtoject.DataBaseInteract;
+using CryptoProject.PumpAndDump;
+using CryptoProject.DataBaseInteract;
 
-namespace CryptoPtoject.TelegramBots
+namespace CryptoProject.TelegramBots
 {
     public class PumpAndDumpBot
     {

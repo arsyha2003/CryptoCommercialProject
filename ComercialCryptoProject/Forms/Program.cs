@@ -1,4 +1,4 @@
-namespace CryptoPtoject.Forms
+namespace CryptoProject
 {
     internal static class Program
     {

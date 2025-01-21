@@ -8,9 +8,9 @@ using Bybit.Net.Enums;
 using Microsoft.EntityFrameworkCore;
 using Telegram.Bot;
 using Telegram.Bot.Types.Enums;
-using CryptoPtoject.DataBaseInteract;
-using CryptoPtoject.DataBaseInteract.Models;
-namespace CryptoPtoject.PumpAndDump
+using CryptoProject.DataBaseInteract;
+using CryptoProject.DataBaseInteract.Models;
+namespace CryptoProject.PumpAndDump
 {
     public class BybitPumpAndDump
     {

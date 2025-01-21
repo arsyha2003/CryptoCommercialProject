@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using CryptoExchange.Net.Authentication;
 using Mexc.Net.Clients;
 using OKX.Net.Clients;
-namespace CryptoPtoject.Arbitrage.Exchanges
+namespace CryptoProject.Arbitrage.Exchanges
 {
     /// <summary>
     /// класс для работы с rest api биржи Mexc

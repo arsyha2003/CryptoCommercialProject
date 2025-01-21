@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using CryptoPtoject.DataBaseInteract.Models;
+using CryptoProject.DataBaseInteract.Models;
 
-namespace CryptoPtoject.DataBaseInteract
+namespace CryptoProject.DataBaseInteract
 {
     public class Context : DbContext
     {

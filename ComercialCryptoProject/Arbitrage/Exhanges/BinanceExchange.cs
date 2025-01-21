@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CryptoPtoject.Arbitrage.Exchanges
+namespace CryptoProject.Arbitrage.Exchanges
 {
     /// <summary>
     /// класс для работы с rest api биржи Binance

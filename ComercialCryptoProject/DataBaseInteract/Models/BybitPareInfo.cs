@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace CryptoPtoject.DataBaseInteract.Models
+namespace CryptoProject.DataBaseInteract.Models
 {
     public class BybitPareInfo
     {

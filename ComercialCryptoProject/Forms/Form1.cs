@@ -2,10 +2,10 @@ using Microsoft.EntityFrameworkCore;
 using System.Runtime.InteropServices;
 using Telegram.Bot;
 using Telegram.Bot.Types.Enums;
-using CryptoPtoject.TelegramBots;
-using CryptoPtoject.DataBaseInteract;
+using CryptoProject.TelegramBots;
+using CryptoProject.DataBaseInteract;
 
-namespace CryptoPtoject
+namespace CryptoProject
 {
     public partial class Form1 : Form
     {

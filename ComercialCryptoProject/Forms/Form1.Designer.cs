@@ -1,4 +1,4 @@
-﻿namespace CryptoPtoject
+﻿namespace CryptoProject
 {
     partial class Form1
     {

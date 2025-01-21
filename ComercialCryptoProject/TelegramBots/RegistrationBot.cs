@@ -6,10 +6,10 @@ using Telegram.Bot.Types.Payments;
 using Telegram.Bot.Types.ReplyMarkups;
 using Telegram.Bot.Args;
 using Microsoft.EntityFrameworkCore;
-using CryptoPtoject.DataBaseInteract;
-using CryptoPtoject.DataBaseInteract.Models;
-
-namespace CryptoPtoject.TelegramBots
+using CryptoProject.DataBaseInteract;
+using CryptoProject.DataBaseInteract.Models;
+using CryptoProject.Tools;
+namespace CryptoProject.TelegramBots
 {
     /// <summary>
     /// класс бота, отвечающего за регистрацию
@@ -18,7 +18,6 @@ namespace CryptoPtoject.TelegramBots
     {
         private ITelegramBotClient botClient;
         const string telegramApiToken = "7248550747:AAEVpNpTA7doTh3S8xSCjNRh_c0HK1q2sEQ";
-        private InlineKeyboardMarkup inlineKeyboard;
         public RegistrationBot()
         {
             using (var db = new Context()) { db.Database.EnsureCreated(); }
@@ -215,41 +214,43 @@ namespace CryptoPtoject.TelegramBots
                                 $"Создатель, владелец и разработчик - @senyacm", ParseMode.Html);
                             break;
                         case "subInfo":
-                            
-                            var users = db.Users.Where(p=>p.TelegramId == uId).ToList();
-                            if (users.Count() == 0)
+                            try
                             {
-                                await botClient.SendMessage(uId, $"Вас нет в базе данных бота, купите одну из наших подписок");
-                                await SendArbitrageKeyboardAsync(botClient, uId);
-                                await SendPumpAndDumpKeyboardAsync(botClient, uId);
-                                break;
-                            }
-                            
-                            foreach (var user in users)
-                            {
-                                await botClient.SendMessage(uId, $"{user.SubTypeId}");
-                                switch (user.SubTypeId)
+                                var users = db.Users.Where(p => p.TelegramId == uId).ToList();
+                                if (users.Count() == 0)
                                 {
-                                    case 1:
-                                        await botClient.SendMessage(uId, $"Ваши данные\n"+
-                                        $"Ваш UID: {user.TelegramId}\n" +
-                                        $"Тип подписки: <b>Арбитражник</b>\n" +
-                                        $"Дата действия подписки: до {user.SubscriptionEnd.ToShortDateString()}\n" +
-                                        $"Ссылка на ботa - @arbi_crypto_mega_bot", ParseMode.Html);
-                                        break;
-                                    case 2:
-                                        await botClient.SendMessage(uId,$"Тип подписки: <b>Pump&Dump скринер</b>\n" +
-                                        $"Дата действия подписки: до {user.SubscriptionEnd.ToShortDateString()}\n" +
-                                        $"Ссылка на бота - @PandDScreenerbot", ParseMode.Html);
-                                        break;
-                                    case 3:
-                                        await botClient.SendMessage(uId, $"<b>Тип подписки: Подписка на все продукты</b>\n" +
-                                        $"Дата действия подписки: до {user.SubscriptionEnd.ToShortDateString()}\n" +
-                                        $"Pump&Dump скринер - @PandDScreenerbott\n" +
-                                        $"Арбитражник - @arbi_crypto_mega_bot", ParseMode.Html);
-                                        break;
+                                    await botClient.SendMessage(uId, $"Вас нет в базе данных бота, купите одну из наших подписок");
+                                    await SendArbitrageKeyboardAsync(botClient, uId);
+                                    await SendPumpAndDumpKeyboardAsync(botClient, uId);
+                                    break;
+                                }
+                                foreach (var user in users)
+                                {
+                                    await botClient.SendMessage(uId, $"{user.SubTypeId}");
+                                    switch (user.SubTypeId)
+                                    {
+                                        case 1:
+                                            await botClient.SendMessage(uId, $"Ваши данные\n" +
+                                            $"Ваш UID: {user.TelegramId}\n" +
+                                            $"Тип подписки: <b>Арбитражник</b>\n" +
+                                            $"Дата действия подписки: до {user.SubscriptionEnd.ToShortDateString()}\n" +
+                                            $"Ссылка на ботa - @arbi_crypto_mega_bot", ParseMode.Html);
+                                            break;
+                                        case 2:
+                                            await botClient.SendMessage(uId, $"Тип подписки: <b>Pump&Dump скринер</b>\n" +
+                                            $"Дата действия подписки: до {user.SubscriptionEnd.ToShortDateString()}\n" +
+                                            $"Ссылка на бота - @PandDScreenerbot", ParseMode.Html);
+                                            break;
+                                        case 3:
+                                            await botClient.SendMessage(uId, $"<b>Тип подписки: Подписка на все продукты</b>\n" +
+                                            $"Дата действия подписки: до {user.SubscriptionEnd.ToShortDateString()}\n" +
+                                            $"Pump&Dump скринер - @PandDScreenerbott\n" +
+                                            $"Арбитражник - @arbi_crypto_mega_bot", ParseMode.Html);
+                                            break;
+                                    }
                                 }
                             }
+                            catch (Exception ex) { Logger.Log(DateTime.Now + " " + ex.Message); }
                             break;
                         default:
                             break;

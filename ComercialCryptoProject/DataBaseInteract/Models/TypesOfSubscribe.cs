@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CryptoPtoject.DataBaseInteract.Models
+namespace CryptoProject.DataBaseInteract.Models
 {
     public class TypesOfSubscribe
     {

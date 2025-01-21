@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CryptoPtoject
+namespace CryptoProject
 {
     public partial class OptionsForm : Form
     {
